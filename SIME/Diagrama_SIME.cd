@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SIME.Class.Cliente" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQkIGuqzIBhKEYykMQEB17YRUAEDibjQBCEkIRBIIjA=</HashCode>
+      <FileName>Class\Cliente.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SIME.Class.Clientes" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAAAAAAABEEBAAAEQgAAAAAAAAAAIAIAAEAAAA=</HashCode>
+      <FileName>Class\Clientes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIME.Class.ContaApagar" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAgAAAQIAAAQCAACEACBwgGCgAABAgCAAAAAgAAIAA=</HashCode>
+      <FileName>Class\ContaApagar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SIME.Class.infCredito" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAEQAQAAAAAACwACAAIAAAAAA=</HashCode>
+      <FileName>Class\infCredito.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIME.Class.InformacaoCredito" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAACAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Class\InformacaoCredito.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIME.Class.Usuario" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAABAAAAAAAAAAEAAAAIQAAIAAAABAAAAAABAAAAAA=</HashCode>
+      <FileName>Class\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIME.Class.Uteis" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIgAgAAAAAEAAAIAIAAACBQAAAAAAAAAAABAIAAAEA=</HashCode>
+      <FileName>Class\Uteis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIME.Class.DadosCEP">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAiIAAADAAAEAAAABAIAAAAAgACAAAIQAAAAAAA=</HashCode>
+      <FileName>Class\Uteis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIME.Class.UteisWeb" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgwAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\UteisWeb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SIME.Conexao" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAAQCAYAAAAAgAEAAAABAAACAACAQAAAQAAAAhBA=</HashCode>
+      <FileName>Class\Conexao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sime.Usuarios" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMEFAAAAQAAAAEAAAQAAAAAAABAACAQhAIQAAAABQ=</HashCode>
+      <FileName>Class\Usuarios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sime.VendasUsuario" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAgACBEAACAQIJMAAIggAABACAyhgAQIAAAAA=</HashCode>
+      <FileName>Class\Vendas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SIME.Class.ITrataDados" Collapsed="true">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Itratadados.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SIME.Class.classificaConta" Collapsed="true">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\ContaApagar.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SIME.Class.empresas" Collapsed="true">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACBAAAA=</HashCode>
+      <FileName>Class\ContaApagar.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SIME.Class.EnunAlinhamentos" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAIAA=</HashCode>
+      <FileName>Class\EnunAlinhamentos.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SIME.Class.EnumOperadoras" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAEQAABAAAAEAAAAAAAAAAAAAAAAEAAAAACAQ=</HashCode>
+      <FileName>Class\EnunEnumeradores.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SIME.Class.EnumClassificacao" Collapsed="true">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIABAAAABBAAAgAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Class\EnunEnumeradores.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

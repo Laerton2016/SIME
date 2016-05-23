@@ -1,0 +1,297 @@
+@media screen
+{
+    .easyMenu
+    {
+        border-top: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        border-right: 1px solid #CCCCCC;
+        background-color: #F9F9F9;
+        visibility: hidden;
+    }
+
+    .easyMenuItemContainer
+    {
+    }
+
+    .easyMenuItem
+    {
+        height: 20px;
+        cursor: auto;
+        cursor: pointer;
+        font-family: Tahoma;
+        font-size: 11px;
+        color: #666666;
+        border-bottom: 1px solid #CCCCCC;
+        text-indent: 10px;
+    }
+
+    .easyMenuItem a
+    {
+        height: 20px;
+        cursor: auto;
+        cursor: pointer;
+        font-family: Tahoma;
+        font-size: 11px;
+        text-decoration: none;
+        color: #666666;
+        text-indent: 10px;
+    }
+
+    .easyMenuItemIconCell
+    {
+    }
+
+    .easyMenuItemIconCell a
+    {
+    }
+
+    .easyMenuItemContentCell
+    {
+    }
+
+    .easyMenuItemContentCell a
+    {
+        height: 20px;
+        color: Black;
+        cursor: auto;
+        cursor: pointer;
+        font-family: Tahoma;
+        font-size: 11px;
+        text-decoration: none;
+        text-indent: 10px;
+    }
+
+    .easyMenuItemOver
+    {
+        height: 20px;
+        color: #FFFFFF;
+        cursor: auto;
+        cursor: pointer;
+        font-family: Tahoma;
+        font-size: 11px;
+        background-color: #B2D865;
+        text-indent: 10px;
+    }
+
+    .easyMenuItemOver a
+    {
+        height: 20px;
+        color: #FFFFFF;
+        cursor: auto;
+        cursor: pointer;
+        font-family: Tahoma;
+        font-size: 11px;
+        text-decoration: none;
+        text-indent: 10px;
+    }
+
+    .easyMenuItemIconCellOver
+    {
+    }
+
+    .easyMenuItemIconCellOver a
+    {
+    }
+
+    .easyMenuItemContentCellOver
+    {
+    }
+
+    .easyMenuItemContentCellOver a
+    {
+        color: Black;
+        cursor: auto;
+        cursor: pointer;
+        font-family: Tahoma;
+        font-size: 11px;
+        text-decoration: none;
+    }
+
+    .easyMenuSeparator
+    {
+    }
+
+    .easyMenuSeparatorIconCell
+    {
+    }
+
+    .easyMenuSeparatorContentCell
+    {
+    }
+
+    .easyMenuSeparatorOver
+    {
+    }
+
+    .easyMenuSeparatorIconCellOver
+    {
+    }
+
+    .easyMenuSeparatorContentCellOver
+    {
+    }
+
+    .rotulo
+    {
+        background: #DDD;
+        font-family: Tahoma;
+        font-size: large;
+        text-align: center;
+        border-top: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        border-right: 1px solid #CCCCCC;
+    }
+    
+    .rotuloPequenoCinza
+    {
+        background: #DDD;
+        font-family: Tahoma;
+        font-size: small;
+        font-weight:bold;
+        text-align: left;
+        border-top: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        border-right: 1px solid #CCCCCC;
+        border-bottom-color: #DDD;
+    }
+    .botao
+    {
+        border-style: none;
+        border-color: inherit;
+        border-width: 0px;
+        font-family: 'Segoe UI' , 'Open Sans' , Arial, sans-serif;
+        color: #CC99FF;
+        text-decoration: none;
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        background: #99CCFF;
+        color: #000;
+        outline: 0px none;
+    }
+    .botao:disable
+    {
+        font-family: 'Segoe UI' , 'Open Sans' , Arial, sans-serif;
+        color: #CC99FF;
+        text-decoration: none;
+        text-align: center;
+        height: 25px;
+        font-size: 12px;
+        text-transform: uppercase;
+        background: #99CCFF;
+        color: #000;
+        border: 0px none;
+        outline: 0px none;
+    }
+    .botao:hover
+    {
+        background: #9999FF;
+    }
+
+    .botao:active
+    {
+        background: #6666FF;
+    }
+    /* Background Color */
+    .caixaTexto
+    {
+        
+        border: 1px solid #CDD0FE;
+        margin-left: 0px;
+        font-family: Tahoma;
+        font-size: 12cpx;
+        font-weight:bold;
+        
+        text-align: left;
+    }
+    .caixaTextoValor
+    {
+        
+        border: 1px solid #CDD0FE;
+        margin-left: 0px;
+        font-family: Tahoma;
+        font-size: 12cpx;
+        font-weight:bold;
+        Height: 22px;
+        text-align: right; 
+    }
+    
+    .caixaTextoCentral
+    {
+        
+        border: 1px solid #CDD0FE;
+        margin-left: 0px;
+        font-family: Tahoma;
+        font-size: 12cpx;
+        font-weight:bold;
+        text-align: center; 
+    }
+    .caixaSolida
+    {
+        border: 3px double #CCCCCC;
+        background: white;
+    }
+    .rotulo2
+    {
+        background: #E9E9FE;
+        margin-left: 1px;
+        font-family: Tahoma;
+        font-size: 12cpx;
+        font-weight:bold;
+        Height: 15px;
+    }
+    .rotulo_menor
+    {
+        border: 1px solid rgb(0,0,0);
+        background: #E9E9FE;
+        margin-left: 1px;
+        font-family: Tahoma;
+        font-size: smaller;
+
+    }
+.caixaTexto_menor
+    {
+        border: 1px solid #CDD0FE;
+        margin-left: 1px;
+        font-family: Tahoma;
+        font-size: 12px;
+    }
+    
+    .updateFile
+{
+        width: 361px; 
+        height: 92px; 
+        z-index: 2;
+        display: block;
+        background-color: white;
+        /*opacity: 1;*/
+        /*For IE browsers */
+        /*filter: alpha(opacity=100);*/
+        position: absolute; 
+        margin-left: 35%;
+        margin-top: 200px;
+        margin-bottom: 0px;
+        border: 2px solid #4797ED;
+        -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 20px;
+    font-size: 18px;
+    top: 85px;
+    left: 503px;
+}
+.updateBox
+{
+        display:block; 
+        position:absolute; 
+        top:0;
+        left:0;
+        width:100%;
+        height:100%; 
+        /*background-color: gray; */
+        background-image: url('/images/pop_bg.png');
+        /*opacity: 0.8;*/
+        /*For IE browsers */
+        /*filter: alpha(opacity=80);*/
+        z-index: 2;
+}
+}

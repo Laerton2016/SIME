@@ -1,0 +1,120 @@
+@media screen
+{
+	.easyMenu
+	{
+		visibility: hidden;
+		background-color: white;
+		padding: 2px;
+	}
+	
+	.easyMenuItemContainer
+	{
+	}
+
+	.easyMenuItem
+	{
+		cursor: auto; cursor: pointer;
+		padding: 2px;
+		padding-left: 5px;
+		font-family: Tahoma;
+		font-size: 11px;
+		height: 16px;
+		color: #073771;
+		background-color: #FEC437;
+		border: 1px solid white;
+	}
+	
+	.easyMenuItem a
+	{
+		cursor: auto; cursor: pointer;
+		color: #073771;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuItemIconCell
+	{
+	}
+
+	.easyMenuItemIconCell a
+	{
+	}
+
+	.easyMenuItemContentCell
+	{
+	}
+
+	.easyMenuItemContentCell a
+	{
+	}
+
+	.easyMenuItemOver
+	{
+		cursor: auto; cursor: pointer;
+		padding: 2px;
+		padding-left: 5px;
+		font-family: Tahoma;
+		font-size: 11px;
+		height: 16px;
+		background-color: #073771;
+		color: white;
+		border: 1px solid white;
+	}
+	
+	.easyMenuItemOver a
+	{
+		color: White;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuItemIconCellOver
+	{
+	}
+
+	.easyMenuItemIconCellOver a
+	{
+	}
+
+	.easyMenuItemContentCellOver
+	{
+	}
+
+	.easyMenuItemContentCellOver a
+	{
+	}
+
+	.easyMenuSeparator
+	{
+		height: 16px;
+		font-size: 1px;
+		color: Silver;
+	}
+	
+	.easyMenuSeparatorIconCell
+	{
+	}
+	
+	.easyMenuSeparatorContentCell
+	{
+	}
+
+	.easyMenuSeparatorOver
+	{
+		height: 16px;
+		font-size: 1px;
+		color: Silver;
+	}
+
+	.easyMenuSeparatorIconCellOver
+	{
+	}
+	
+	.easyMenuSeparatorContentCellOver
+	{
+	}
+
+}

@@ -1,0 +1,160 @@
+@media screen
+{
+	.easyMenu
+	{
+		border: 1px solid #666666;
+		background-color: #FEFEFE;
+		visibility: hidden;
+		background-image: url('bg_menu.gif');
+		background-repeat: repeat-y;
+		background-position: left top;
+	}
+	
+	.easyMenuItemContainer
+	{
+		border-top: 1px solid #FFFFFF;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+
+	.easyMenuItem
+	{
+		cursor: auto; cursor: pointer;
+		padding: 1px;
+		font-family: Verdana;
+		font-size: xx-small;
+		border: 0px node;
+	}
+	
+	.easyMenuItem a
+	{
+		cursor: auto; cursor: pointer;
+		color: Black;
+		font-family: Verdana;
+		font-size: xx-small;
+		text-decoration: none;
+	}
+
+	.easyMenuItemIconCell
+	{
+		width: 22px;
+		text-align: center;
+	}
+
+	.easyMenuItemIconCell a
+	{
+		cursor: auto; cursor: pointer;
+		color: Black;
+		font-family: Verdana;
+		font-size: xx-small;
+		text-decoration: none;
+	}
+
+	.easyMenuItemContentCell
+	{
+	}
+
+	.easyMenuItemContentCell a
+	{
+		cursor: auto; cursor: pointer;
+		color: Black;
+		font-family: Verdana;
+		font-size: xx-small;
+		text-decoration: none;
+	}
+
+	.easyMenuItemOver
+	{
+		cursor: auto; cursor: pointer;
+		padding: 0px;
+		font-family: Verdana;
+		font-size: xx-small;
+		background-color: #B6BDD2;
+		border: 1px solid #0A246A;
+	}
+	
+	.easyMenuItemOver a
+	{
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Verdana;
+		font-size: xx-small;
+		text-decoration: none;
+	}
+
+	.easyMenuItemIconCellOver
+	{
+		width: 22px;
+		text-align: center;
+	}
+
+	.easyMenuItemIconCellOver a
+	{
+		cursor: auto; cursor: pointer;
+		color: Black;
+		font-family: Verdana;
+		font-size: xx-small;
+		text-decoration: none;
+	}
+
+	.easyMenuItemContentCellOver
+	{
+	}
+
+	.easyMenuItemContentCellOver a
+	{
+		cursor: auto; cursor: pointer;
+		color: Black;
+		font-family: Verdana;
+		font-size: xx-small;
+		text-decoration: none;
+	}
+
+	.easyMenuSeparator
+	{
+		height: 3px;
+		font-size: 1px;
+		color: Silver;
+	}
+	
+	.easyMenuSeparatorIconCell
+	{
+		text-align: center;
+		height: 3px;
+		width: 22px;
+		font-size: 1px;
+	}
+	
+	.easyMenuSeparatorContentCell
+	{
+		height: 3px;
+		font-size: 1px;
+		background-image: url('bg_separator.gif');
+		background-repeat: repeat-x;
+		background-position: 0px 1px;
+	}
+
+	.easyMenuSeparatorOver
+	{
+		height: 3px;
+		font-size: 1px;
+		color: Silver;
+	}
+
+	.easyMenuSeparatorIconCellOver
+	{
+		text-align: center;
+		height: 3px;
+		width: 22px;
+		font-size: 1px;
+	}
+	
+	.easyMenuSeparatorContentCellOver
+	{
+		height: 3px;
+		font-size: 1px;
+		background-image: url('bg_separator.gif');
+		background-repeat: repeat-x;
+		background-position: 0px 1px;
+	}
+}

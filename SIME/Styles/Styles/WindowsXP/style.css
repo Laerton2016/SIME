@@ -1,0 +1,151 @@
+@media screen
+{
+	.easyMenu
+	{
+		border: 1px solid silver;
+		background-color: #FFFFFF;
+		visibility: hidden;
+	}
+	
+	.easyMenuItemContainer
+	{
+	}
+
+	.easyMenuItem
+	{
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+	}
+	
+	.easyMenuItem a
+	{
+		cursor: auto; cursor: pointer;
+		color: Black;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuItemIconCell
+	{
+		text-align: center;
+		width: 22px;
+	}
+
+	.easyMenuItemIconCell a
+	{
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuItemContentCell
+	{
+	}
+
+	.easyMenuItemContentCell a
+	{
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuItemOver
+	{
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		background-color: #BBBBBB;
+	}
+	
+	.easyMenuItemOver a
+	{
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuItemIconCellOver
+	{
+		text-align: center;
+		width: 22px;
+	}
+
+	.easyMenuItemIconCellOver a
+	{
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuItemContentCellOver
+	{
+	}
+
+	.easyMenuItemContentCellOver a
+	{
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuSeparator
+	{
+		height: 3px;
+		font-size: 1px;
+		color: Silver;
+	}
+	
+	.easyMenuSeparatorIconCell
+	{
+		text-align: center;
+		height: 3px;
+		width: 22px;
+		font-size: 1px;
+	}
+	
+	.easyMenuSeparatorContentCell
+	{
+		height: 3px;
+		font-size: 1px;
+		background-image: url('bg_separator.gif');
+		background-repeat: repeat-x;
+		background-position: 0px 1px;
+	}
+
+	.easyMenuSeparatorOver
+	{
+		height: 3px;
+		font-size: 1px;
+		color: Silver;
+	}
+
+	.easyMenuSeparatorIconCellOver
+	{
+		text-align: center;
+		height: 3px;
+		width: 22px;
+		font-size: 1px;
+	}
+	
+	.easyMenuSeparatorContentCellOver
+	{
+		height: 3px;
+		font-size: 1px;
+		background-image: url('bg_separator.gif');
+		background-repeat: repeat-x;
+		background-position: 0px 1px;
+	}
+
+}

@@ -1,0 +1,128 @@
+@media screen
+{
+	.easyMenu
+	{
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #CCCCCC;
+		background-color: #F9F9F9;
+		visibility: hidden;
+	}
+	
+	.easyMenuItemContainer
+	{
+	}
+
+	.easyMenuItem
+	{
+		height: 20px;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		color: #666666;
+		border-bottom: 1px solid #CCCCCC;
+		text-indent: 10px;
+	}
+	
+	.easyMenuItem a
+	{
+		height: 20px;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+		color: #666666;
+		text-indent: 10px;
+	}
+
+	.easyMenuItemIconCell
+	{
+	}
+
+	.easyMenuItemIconCell a
+	{
+	}
+
+	.easyMenuItemContentCell
+	{
+	}
+
+	.easyMenuItemContentCell a
+	{
+		height: 20px;
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+		text-indent: 10px;
+	}
+
+	.easyMenuItemOver
+	{
+		height: 20px;
+		color: #FFFFFF;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		background-color: #B2D865;
+		text-indent: 10px;
+	}
+	
+	.easyMenuItemOver a
+	{
+		height: 20px;
+		color: #FFFFFF;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+		text-indent: 10px;
+	}
+
+	.easyMenuItemIconCellOver
+	{
+	}
+
+	.easyMenuItemIconCellOver a
+	{
+	}
+
+	.easyMenuItemContentCellOver
+	{
+	}
+
+	.easyMenuItemContentCellOver a
+	{
+		color: Black;
+		cursor: auto; cursor: pointer;
+		font-family: Tahoma;
+		font-size: 11px;
+		text-decoration: none;
+	}
+
+	.easyMenuSeparator
+	{
+	}
+	
+	.easyMenuSeparatorIconCell
+	{
+	}
+	
+	.easyMenuSeparatorContentCell
+	{
+	}
+
+	.easyMenuSeparatorOver
+	{
+	}
+
+	.easyMenuSeparatorIconCellOver
+	{
+	}
+	
+	.easyMenuSeparatorContentCellOver
+	{
+	}
+
+}

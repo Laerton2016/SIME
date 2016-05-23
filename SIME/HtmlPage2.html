@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Teste de visualização</title>
+    <meta name="viewport" content="width=device-width; user-scalable = 1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <link rel="stylesheet" media="screen" href="todolist.css" />
+</head>
+<body onload="window.scrollTo(0, 1);">
+
+    <h1 class="fancy">Create Task</h1>
+    <form id="taskentry" onsubmit="return false;">
+        <ul>
+            <li><input type="text" name="task[name]" id="taskname" placeholder="Task Name" /></li>
+            <li><textarea name="task[description]" rows="5" placeholder="Description"></textarea></li>
+            <li><input type="text" name="task[due]" id="taskdue" placeholder="Task Due" /></li>
+        </ul>
+        <input type="submit" name="Save" />
+    </form>
+</body>
+</html>
