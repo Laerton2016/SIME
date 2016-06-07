@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.OleDb;
+using SIME.Class.ProdutoClass;
 
 namespace SIME.Class.DAO
 {
@@ -12,7 +13,6 @@ namespace SIME.Class.DAO
     /// </summary>
     public class DAOProduto : IDAO<NetProduto>
     {
-        
         
         /// <summary>
         /// Método busca por um produto a partir do seu id

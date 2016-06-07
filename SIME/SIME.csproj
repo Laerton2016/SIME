@@ -265,7 +265,7 @@
     <Compile Include="Class\primitivo\NetCliente.cs" />
     <Compile Include="Class\primitivo\NetItemVenda.cs" />
     <Compile Include="Class\primitivo\NetOS.cs" />
-    <Compile Include="Class\primitivo\NetProduto.cs" />
+    <Compile Include="Class\ProdutoClass\NetProduto.cs" />
     <Compile Include="Class\Ean13.cs" />
     <Compile Include="Class\Empresa.cs" />
     <Compile Include="Class\Empresas.cs" />
@@ -291,6 +291,8 @@
     <Compile Include="Class\NFe\ProdutosNFe.cs" />
     <Compile Include="Class\primitivo\NetVenda.cs" />
     <Compile Include="Class\ClassProduto\FacedeProduto.cs" />
+    <Compile Include="Class\ProdutoClass\Produto.cs" />
+    <Compile Include="Class\ProdutoClass\Produtos.cs" />
     <Compile Include="Class\Regra.cs" />
     <Compile Include="Class\Seguradora.cs" />
     <Compile Include="Class\ContaApagar.cs" />
