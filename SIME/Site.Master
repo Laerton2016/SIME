@@ -50,7 +50,7 @@
                             <asp:MenuItem NavigateUrl="~/Web_Clientes.aspx" Text="Clientes" Value="Clientes">
                             </asp:MenuItem>
                             <asp:MenuItem Text="Produtos" Value="Produtos" 
-                                NavigateUrl="~/Produtos/produtos.aspx"></asp:MenuItem>
+                                NavigateUrl="~/Produtos1/produtos.aspx"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/OS/OSPrincipal.aspx" Text="OS" Value="OS">
                             </asp:MenuItem>
                         </asp:MenuItem>

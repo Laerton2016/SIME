@@ -6,7 +6,7 @@ using ADODB;
 using System.Data.OleDb;
 
 
-namespace SIME.Class.ProdutoClass
+namespace SIME.Class
 {
     /// <summary>
     /// Classe que cria o objeto do tipo produto

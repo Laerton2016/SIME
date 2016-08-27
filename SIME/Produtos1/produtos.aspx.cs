@@ -682,7 +682,7 @@ namespace SIME.Produtos
 
         protected void btImport_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Produtos/importa.aspx");
+            Response.Redirect("~/Produtos1/importa.aspx");
         }
 
         /**

@@ -9,7 +9,7 @@ namespace SIME.Class
 {
     public class Produtos
     {
-        Recordset dados = new Recordset();
+        private Recordset _dados = new Recordset();
 
         public Produtos() { }
 
@@ -18,23 +18,23 @@ namespace SIME.Class
             Connection conex = new Conexao().getDb4();
             List<String[]> retorno = new List<String[]>();
             String SQL = "SELECT PRODUTOS.Cod, PRODUTOS.Descrição, PRODUTOS.Codbarras, PRODUTOS.desc, expr5, expr7 FROM PRODUTOS WHERE (((PRODUTOS.Cod)=" + ID + "));";
-            if (dados.State != 0) { this.dados.Close(); }
-            dados.Open(SQL, conex, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic);
-            if (dados.EOF || dados.BOF)
+            if (this._dados.State != 0) { this._dados.Close(); }
+            _dados.Open(SQL, conex, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic);
+            if (_dados.EOF || _dados.BOF)
             {
                 throw new ArgumentException("ID de produto inválido.");
             }
-            while (!(dados.BOF || dados.EOF))
+            while (!(_dados.BOF || _dados.EOF))
             {
                 String[] conteudo = new String[6];
-                conteudo[0] = dados.Fields["cod"].Value.ToString();
-                conteudo[1] = dados.Fields["Descrição"].Value.ToString();
-                conteudo[2] = dados.Fields["Codbarras"].Value.ToString();
-                conteudo[3] = dados.Fields["Desc"].Value.ToString();
-                conteudo[4] = dados.Fields["Expr5"].Value.ToString();
-                conteudo[5] = dados.Fields["expr7"].Value.ToString();
+                conteudo[0] = _dados.Fields["cod"].Value.ToString();
+                conteudo[1] = _dados.Fields["Descrição"].Value.ToString();
+                conteudo[2] = _dados.Fields["Codbarras"].Value.ToString();
+                conteudo[3] = _dados.Fields["Desc"].Value.ToString();
+                conteudo[4] = _dados.Fields["Expr5"].Value.ToString();
+                conteudo[5] = _dados.Fields["expr7"].Value.ToString();
                 retorno.Add(conteudo);
-                dados.MoveNext();
+                _dados.MoveNext();
             }
             return retorno;
         }
@@ -48,12 +48,12 @@ namespace SIME.Class
         {
             Connection conex = new Conexao().getDb4();
             List<String[]> retorno = new List<String[]>();
-            
+
             String SQL = "SELECT PRODUTOS.Cod, PRODUTOS.Descrição, PRODUTOS.Codbarras, PRODUTOS.desc FROM PRODUTOS";
-            
+
             if (EAN == false)
             {
-                SQL +=   " WHERE PRODUTOS.Descrição Like '%" + dado + "%'" ;
+                SQL += " WHERE PRODUTOS.Descrição Like '%" + dado + "%'";
             }
             else
             {
@@ -68,29 +68,29 @@ namespace SIME.Class
 
             SQL += " ORDER BY PRODUTOS.Descrição;";
 
-            if (dados.State != 0) { this.dados.Close(); }
+            if (_dados.State != 0) { this._dados.Close(); }
 
-            dados.Open(SQL, conex, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic);
+            _dados.Open(SQL, conex, CursorTypeEnum.adOpenDynamic, LockTypeEnum.adLockOptimistic);
 
-            if (dados.EOF || dados.BOF)
+            if (_dados.EOF || _dados.BOF)
             {
                 throw new ArgumentException("O resultado é de 0 registros. Reveja os dados de busca.");
             }
-            while (!(dados.BOF || dados.EOF))
+            while (!(_dados.BOF || _dados.EOF))
             {
                 String[] conteudo = new String[4];
-                conteudo[0] = dados.Fields["cod"].Value.ToString();
-                conteudo[1] = dados.Fields["Descrição"].Value.ToString();
-                conteudo[2] = dados.Fields["Codbarras"].Value.ToString();
-                conteudo[3] = dados.Fields["Desc"].Value.ToString();
+                conteudo[0] = _dados.Fields["cod"].Value.ToString();
+                conteudo[1] = _dados.Fields["Descrição"].Value.ToString();
+                conteudo[2] = _dados.Fields["Codbarras"].Value.ToString();
+                conteudo[3] = _dados.Fields["Desc"].Value.ToString();
                 retorno.Add(conteudo);
-                dados.MoveNext();
+                _dados.MoveNext();
             }
             return retorno;
         }
-        public List<String[]> getListaProdutos(String dado, Boolean EAN)
+        public List<String[]> getListaProdutos(String texto, Boolean EAN)
         {
-            return getListaProdutos(dado, EAN, true);
+            return getListaProdutos(texto, EAN, true);
         }
 
     }
