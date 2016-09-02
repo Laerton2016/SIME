@@ -8,10 +8,12 @@ namespace SIME.Class.DAO
 {
     public class DAOCliente : IDAO<NetCliente>
     {
+
         public NetCliente Buscar(long id)
         {
             String SQL = "Seletc * from clientes where cod_cliente = " + id + ";";
-            throw new NotImplementedException();
+            return null;
+                 
         }
 
         public void Excluir(NetCliente t)

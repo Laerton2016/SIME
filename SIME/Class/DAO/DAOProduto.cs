@@ -33,7 +33,7 @@ namespace SIME.Class.DAO
         /// <returns>Produto localizado, caso não encontre retorna null</returns>
         private NetProduto BuscaporTermo(string SQL)
         {
-            using (OleDbConnection connect = NetConexao.Instance().GetSimeConnect())
+            using (OleDbConnection connect = (OleDbConnection)NetConexao.Instance().GetSimeConnect())
             {
                 
                 connect.Open();
@@ -144,7 +144,7 @@ namespace SIME.Class.DAO
         /// <returns>Lista de produtos localizados pela lista</returns>
         private List<NetProduto> BuscaLista(string SQL)
         {
-            using (OleDbConnection connect = NetConexao.Instance().GetContasConnect())
+            using (OleDbConnection connect = (OleDbConnection)NetConexao.Instance().GetContasConnect())
             {
                 connect.Open();
                 List<NetProduto> lista = new List<NetProduto>();
@@ -202,7 +202,7 @@ namespace SIME.Class.DAO
         public void Excluir(NetProduto produto)
         {
 
-            using (OleDbConnection connect = NetConexao.Instance().GetSimeConnect())
+            using (OleDbConnection connect = (OleDbConnection)NetConexao.Instance().GetSimeConnect())
             {
                 connect.Open();
                 String SQL = "Delete from produtos where cod =" + produto.ID + ";";
@@ -247,7 +247,7 @@ namespace SIME.Class.DAO
         /// <returns>Produto após os dados persistidos.</returns>
         private NetProduto Persite(NetProduto produto, string SQL)
         {
-            using (OleDbConnection connect = NetConexao.Instance().GetSimeConnect())
+            using (OleDbConnection connect = (OleDbConnection)NetConexao.Instance().GetSimeConnect())
             {
                 connect.Open();
                 OleDbTransaction transacao = connect.BeginTransaction();

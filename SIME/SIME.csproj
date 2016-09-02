@@ -244,6 +244,9 @@
     <Compile Include="Class\Aparelho.cs" />
     <Compile Include="Class\Aparelhos.cs" />
     <Compile Include="Class\Atendimento.cs" />
+    <Compile Include="Class\Conexoes\ConexoesAbst.cs" />
+    <Compile Include="Class\Conexoes\Iconexoes.cs" />
+    <Compile Include="Class\Conexoes\MySQLConection.cs" />
     <Compile Include="Class\ContatosCliente.cs" />
     <Compile Include="Class\ContatosFornecedor.cs" />
     <Compile Include="Class\DAO\DAOCliente.cs" />
@@ -281,7 +284,7 @@
     <Compile Include="Class\lojas.cs" />
     <Compile Include="Class\Marcas.cs" />
     <Compile Include="Class\Medida.cs" />
-    <Compile Include="Class\NetConexao.cs" />
+    <Compile Include="Class\Conexoes\NetConexao.cs" />
     <Compile Include="Class\NFe\algoritimoBuscaProduto.cs" />
     <Compile Include="Class\NFe\FormaPagamento.cs" />
     <Compile Include="Class\NFe\Fornecedor.cs" />
@@ -310,7 +313,7 @@
     <Compile Include="Class\Uteis.cs" />
     <Compile Include="Class\UteisWeb.cs" />
     <Compile Include="Class\Vendas.cs" />
-    <Compile Include="Class\Conexao.cs" />
+    <Compile Include="Class\Conexoes\Conexao.cs" />
     <Compile Include="Class\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

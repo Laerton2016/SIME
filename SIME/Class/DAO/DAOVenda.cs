@@ -17,7 +17,7 @@ namespace SIME.Class.DAO
 
         private NetVenda Busca(String SQL)
         {
-            using (OleDbConnection connect = NetConexao.Instance().GetSimeConnect())
+            using (OleDbConnection connect = (OleDbConnection)NetConexao.Instance().GetSimeConnect())
             {
                 connect.Open();
                 NetVenda venda = new NetVenda();
@@ -34,7 +34,7 @@ namespace SIME.Class.DAO
 
         private List<NetVenda> BuscaLista(String SQL)
         {
-            using (OleDbConnection connect = NetConexao.Instance().GetSimeConnect())
+            using (OleDbConnection connect = (OleDbConnection)NetConexao.Instance().GetSimeConnect())
             {
                 connect.Open();
                 List<NetVenda> retorno = new List<NetVenda>();
