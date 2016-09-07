@@ -18,7 +18,7 @@ namespace TestaSolucao
         {
             try
             {
-                DAOProduto dao = new DAOProduto();
+                SIME.Class.DAO.DAOProduto dao = new DAOProduto();
                 NetProduto produto = dao.Buscar(21);
                 Console.WriteLine(produto);
                 //Console.Read();

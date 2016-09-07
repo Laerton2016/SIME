@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace SIME.Class.DAO
 {
     public class DAOVenda : IDAO<NetVenda>
@@ -20,14 +21,15 @@ namespace SIME.Class.DAO
             using (OleDbConnection connect = (OleDbConnection)NetConexao.Instance().GetSimeConnect())
             {
                 connect.Open();
-                NetVenda venda = new NetVenda();
+                NetVenda venda = null;
                 OleDbCommand command = new OleDbCommand(SQL, connect);
-                OleDbDataReader dr = command.ExecuteReader();
-                while (dr.Read())
+                using (OleDbDataReader dr = command.ExecuteReader())
                 {
-                    venda = MontaVenda(dr);
-                }
-                dr.Close();
+                    while (dr.Read())
+                    {
+                        venda = MontaVenda(dr);
+                    }
+                } 
                 return venda;
             }
         }
@@ -40,27 +42,30 @@ namespace SIME.Class.DAO
                 List<NetVenda> retorno = new List<NetVenda>();
 
                 OleDbCommand command = new OleDbCommand(SQL, connect);
-                OleDbDataReader dr = command.ExecuteReader();
-                while (dr.Read())
+                using (OleDbDataReader dr = command.ExecuteReader())
                 {
-                    retorno.Add(MontaVenda(dr));
+                    while (dr.Read())
+                    {
+                        retorno.Add(MontaVenda(dr));
+                    }
                 }
-                dr.Close();
+                
                 return retorno;
             }
         }
-        private NetVenda MontaVenda(OleDbDataReader dr)
+        private NetVenda MontaVenda(OleDbDataReader dr1)
         {
-            NetVenda retorno = new NetVenda();
-            retorno.Cartao = float.Parse(dr["cartao"].ToString());
-            retorno.Cheque = float.Parse(dr["cheque"].ToString());
-            retorno.Date = DateTime.Parse(dr["data"].ToString());
-            retorno.Especie = float.Parse(dr["especie"].ToString());
-            retorno.Id = Int64.Parse(dr["cod_sai"].ToString());
-            retorno.Id_caixa = Int64.Parse(dr["cx"].ToString());
-            retorno.Id_cliente = Int64.Parse(dr["cod_cliente"].ToString());
-            retorno.Id_operador = Int64.Parse(dr["op"].ToString());
-            retorno.Vale = float.Parse(dr["vale"].ToString());
+            NetVenda retorno = new NetVenda(Int64.Parse(dr1["op"].ToString()));
+            retorno.Cartao = float.Parse(dr1["cartao"].ToString());
+            retorno.Cheque = float.Parse(dr1["cheque"].ToString());
+            retorno.Date = DateTime.Parse(dr1["data"].ToString());
+            retorno.Especie = float.Parse(dr1["especie"].ToString());
+            retorno.Id = Int64.Parse(dr1["cod_sai"].ToString());
+            retorno.Idcaixa = Int64.Parse(dr1["cx"].ToString());
+            retorno.Idcliente = Int64.Parse(dr1["cod_cliente"].ToString());
+            retorno.Vale = float.Parse(dr1["vale"].ToString());
+            DAOItemVenda dao = new DAOItemVenda();
+            retorno.Itens = dao.BuscaItensPorVenda(retorno.Id);
             return retorno;
             
         }

@@ -57,10 +57,50 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\ajax45\pt\AjaxControlToolkit.resources.dll</HintPath>
     </Reference>
+    <Reference Include="Cassandra, Version=3.0.0.0, Culture=neutral, PublicKeyToken=10b231fbfc8c4b4d, processorArchitecture=MSIL">
+      <HintPath>..\packages\CassandraCSharpDriver.3.0.8\lib\net40\Cassandra.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.1.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.5.1.0\lib\net40-client\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Fleece, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fleece.0.4.0\lib\NET40\Fleece.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FsControl.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FsControl.1.0.9\lib\net40\FsControl.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharpPlus, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharpPlus.0.0.4\lib\net40\FSharpPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Insight.Database, Version=5.2.7.0, Culture=neutral, PublicKeyToken=f35c6ef87e515afc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Insight.Database.Core.5.2.7\lib\NET40\Insight.Database.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LZ4, Version=1.0.5.93, Culture=neutral, PublicKeyToken=fd2bda0a70c5a705, processorArchitecture=MSIL">
+      <HintPath>..\packages\lz4net.1.0.5.93\lib\net40-client\LZ4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.3.5.8\lib\35\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PrimeFaces-0.1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Ajax\PrimeFaces-0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="ReadOnlyCollectionsExtensions, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReadOnlyCollectionExtensions.1.2.0\lib\NET40-client\ReadOnlyCollectionsExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ReadOnlyCollectionsInterfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReadOnlyCollectionInterfaces.1.0.0\lib\NET40-client\ReadOnlyCollectionsInterfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SanitizerProviders">
       <HintPath>..\..\..\..\..\UFCG\python_VS\AjaxControlToolkit.Binary.NET4\SanitizerProviders\SanitizerProviders.dll</HintPath>
@@ -72,6 +112,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Json.4.0.20126.16343\lib\net40\System.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DataVisualization" />
@@ -244,12 +288,16 @@
     <Compile Include="Class\Aparelho.cs" />
     <Compile Include="Class\Aparelhos.cs" />
     <Compile Include="Class\Atendimento.cs" />
+    <Compile Include="Class\Conexoes\ConexCassandra.cs" />
     <Compile Include="Class\Conexoes\ConexoesAbst.cs" />
     <Compile Include="Class\Conexoes\Iconexoes.cs" />
     <Compile Include="Class\Conexoes\MySQLConection.cs" />
     <Compile Include="Class\ContatosCliente.cs" />
     <Compile Include="Class\ContatosFornecedor.cs" />
+    <Compile Include="Class\CUteis\Json.cs" />
+    <Compile Include="Class\DAO\CassandraItem.cs" />
     <Compile Include="Class\DAO\DAOCliente.cs" />
+    <Compile Include="Class\DAO\DAOItemVenda.cs" />
     <Compile Include="Class\DAO\DAOOS.cs" />
     <Compile Include="Class\DAO\DAOProduto.cs" />
     <Compile Include="Class\DAO\DAOVenda.cs" />
@@ -634,6 +682,7 @@
     <Content Include="Materialize\font\roboto\Roboto-Thin.ttf" />
     <Content Include="Materialize\font\roboto\Roboto-Thin.woff" />
     <Content Include="Materialize\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Loja.pubxml" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
   </ItemGroup>

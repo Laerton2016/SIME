@@ -8,6 +8,7 @@ namespace SIME.Class.Conexoes
 {
     public class MySQLConection : ConexoesAbs
     {
+        protected static Iconexoes instance;
 
         public override IDbConnection GetContasConnect()
         {

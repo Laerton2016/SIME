@@ -1,6 +1,9 @@
-﻿using System;
+﻿using SIME.Class.CUteis;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Json;
 using System.Web;
 
 namespace SIME.Class.primitivo
@@ -10,7 +13,45 @@ namespace SIME.Class.primitivo
         private DateTime _date;
         private Int64 _id_cliente, _id, _id_operador, _id_caixa;
         private float _especie, _cheque, _vale, _cartao;
+        private List<NetItemVenda> itens;
 
+
+        public NetVenda(Int64 idOperador)
+        {
+            Date = DateTime.Now;
+            Id = 0;
+            Idcaixa = 0;
+            Idcliente = 0;
+            Idoperador = idOperador;
+            Especie = 0;
+            Cheque = 0;
+            Vale = 0;
+            Cartao = 0;
+            Itens = new List<primitivo.NetItemVenda>();
+        }
+
+        public void AddItemVenda(NetItemVenda item)
+        {
+            itens.Add(item);
+        }
+
+        public void RemItemVenda(NetItemVenda item)
+        {
+            foreach (var i in Itens)
+            {
+                if (i.Equals(item))
+                {
+                    itens.Remove(i);
+                    break;
+                }
+            }
+        }
+
+        public void UpItemVenda(NetItemVenda item)
+        {
+            RemItemVenda(item);
+            AddItemVenda(item);
+        }
         public DateTime Date
         {
             get
@@ -24,7 +65,7 @@ namespace SIME.Class.primitivo
             }
         }
 
-        public long Id_cliente
+        public long Idcliente
         {
             get
             {
@@ -50,7 +91,7 @@ namespace SIME.Class.primitivo
             }
         }
 
-        public long Id_operador
+        public long Idoperador
         {
             get
             {
@@ -63,7 +104,7 @@ namespace SIME.Class.primitivo
             }
         }
 
-        public long Id_caixa
+        public long Idcaixa
         {
             get
             {
@@ -128,18 +169,19 @@ namespace SIME.Class.primitivo
             }
         }
 
-        public NetVenda()
+        public List<NetItemVenda> Itens
         {
-            Date = DateTime.Now;
-            Id = 0;
-            Id_caixa = 0;
-            Id_cliente = 0;
-            Id_operador = 0;
-            Especie = 0;
-            Cheque = 0;
-            Vale = 0;
-            Cartao = 0;
+            get
+            {
+                return itens;
+            }
+
+            set
+            {
+                itens = value;
+            }
         }
+
         
     }
 }
