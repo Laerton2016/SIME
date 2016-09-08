@@ -17,6 +17,7 @@
     </style>
 </head>
 <body >
+    
     <form runat="server">
     <div class="page">
         <div class="header" 
@@ -29,10 +30,14 @@
             </div>
             <div class="loginDisplay">
                 <asp:Panel ID="Panel2" runat="server" Height="43px" style="margin-left: 0px">
-                    <asp:Label ID="labBoasVindas" runat="server"></asp:Label>
+                            <asp:Label ID="labBoasVindas" runat="server"></asp:Label>
                     <br />
                     <asp:HyperLink ID="HLPerfil" runat="server" Visible="False">Perfil</asp:HyperLink>
                     |<asp:HyperLink ID="HLlogar" runat="server" NavigateUrl="~/logar.aspx">Logar</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HLCarrinho" runat="server" NavigateUrl="~/carrinho/carrinho.aspx" Visible="False">Carrinho : </asp:HyperLink>
+                    <asp:HyperLink ID="HLQCarrinho" CssClass="caixaTextoCentral" runat="server" Visible="False">0</asp:HyperLink>
+                    
                 </asp:Panel>
             </div>
             <div class="clear hideSkiplink">

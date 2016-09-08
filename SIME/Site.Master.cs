@@ -16,11 +16,23 @@ namespace SIME
     {
         private static Conexao conex = new Conexao();
         private static Usuarios user;
+        private static Carrinho _carrinho;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             
             boasVindas();
             
+        }
+
+        public Carrinho GetCarrinho()
+        {
+            return _carrinho;
+        }
+
+        public void SetCarrinho(Carrinho carrinho)
+        {
+            _carrinho = carrinho;
         }
 
         public Usuarios getUser()
@@ -50,14 +62,29 @@ namespace SIME
                     this.HLPerfil.NavigateUrl = "~/emconstrucao.aspx";
                     this.HLlogar.NavigateUrl = "~/deslogar.aspx";
                 }
+                if (usuario.getTipo() <= 4)
+                {
+                    _carrinho = new Carrinho(usuario);
+                    this.HLQCarrinho.Text = _carrinho.GetVenda().Itens.Count.ToString();
+                    this.HLCarrinho.Visible = true;
+                    this.HLQCarrinho.Visible = true;
+                }
             }
             else
             {
                 this.HLlogar.Text = "Logar";
                 this.HLPerfil.Visible = false;
                 this.HLlogar.NavigateUrl = "~/logar.aspx";
-                
+                this.HLCarrinho.Visible = false;
+                this.HLQCarrinho.Visible = false;
+
             }
+        }
+        public void AtualizaCarrinho()
+        {
+
+            this.HLQCarrinho.Text = _carrinho.GetVenda().Itens.Count.ToString();
+            //this.upLogin.Update();
         }
         public void setUsuarioAtual(Usuario usuarioAtualArg)
         {

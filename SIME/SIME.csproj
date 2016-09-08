@@ -105,6 +105,22 @@
     <Reference Include="SanitizerProviders">
       <HintPath>..\..\..\..\..\UFCG\python_VS\AjaxControlToolkit.Binary.NET4\SanitizerProviders\SanitizerProviders.dll</HintPath>
     </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.0.62.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.4.0.62\lib\net40\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.0.62\lib\portable-wp80+sl5+net40+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=4.0.62.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Redis.4.0.62\lib\net40\ServiceStack.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.62.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.0.62\lib\net40\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="skmMenu">
       <HintPath>..\..\..\..\..\Users\Laerton\Downloads\skmMenu2.2.Source\bin\Debug\skmMenu.dll</HintPath>
     </Reference>
@@ -133,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="carrinho\carrinho.aspx" />
     <Content Include="Class\Uploadfy\Change Log.txt" />
     <Content Include="Class\Uploadfy\jquery.uploadify.js" />
     <Content Include="Class\Uploadfy\jquery.uploadify.min.js" />
@@ -285,11 +302,20 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="carrinho\carrinho.aspx.cs">
+      <DependentUpon>carrinho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carrinho\carrinho.aspx.designer.cs">
+      <DependentUpon>carrinho.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Class\Aparelho.cs" />
     <Compile Include="Class\Aparelhos.cs" />
     <Compile Include="Class\Atendimento.cs" />
+    <Compile Include="Class\Carrinho.cs" />
     <Compile Include="Class\Conexoes\ConexCassandra.cs" />
     <Compile Include="Class\Conexoes\ConexoesAbst.cs" />
+    <Compile Include="Class\Conexoes\ConexRedis.cs" />
     <Compile Include="Class\Conexoes\Iconexoes.cs" />
     <Compile Include="Class\Conexoes\MySQLConection.cs" />
     <Compile Include="Class\ContatosCliente.cs" />

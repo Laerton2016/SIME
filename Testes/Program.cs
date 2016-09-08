@@ -9,8 +9,7 @@ using SIME.Class.primitivo;
 using System.Dynamic;
 using System.IO;
 using System.Runtime.Serialization.Json;
-
-
+using SIME.Class.Conexoes;
 
 namespace Testes
 {
@@ -20,19 +19,13 @@ namespace Testes
 
         static void Main(string[] args)
         {
+            CassandraItem dao = new CassandraItem();
+            NetVenda venda = ConexRedis.ResgataCarrinhRedis(1);
+            ConexRedis.GravaCarrinhoRedis(1,venda,1);
+            Console.WriteLine(venda.Id);
+            Console.Read();
 
             
-            
-            DAOVenda dao = new DAOVenda();
-            NetVenda venda = dao.Buscar(24101);
-            CassandraItem dao1 = new CassandraItem();
-            venda = dao1.Buscar(24101);
-            foreach (var item in venda.Itens)
-            {
-                Console.WriteLine(venda.Itens);
-            }
-            
-            Console.Read();
 
         }
     }

@@ -67,6 +67,24 @@ namespace SIME {
         protected global::System.Web.UI.WebControls.HyperLink HLlogar;
         
         /// <summary>
+        /// HLCarrinho control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HLCarrinho;
+        
+        /// <summary>
+        /// HLQCarrinho control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HLQCarrinho;
+        
+        /// <summary>
         /// NavigationMenu control.
         /// </summary>
         /// <remarks>
