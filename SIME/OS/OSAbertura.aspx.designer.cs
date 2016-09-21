@@ -13,20 +13,20 @@ namespace SIME {
     public partial class OSAbertura {
         
         /// <summary>
-        /// ToolkitScriptManager1 control.
+        /// ajaxkit control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
+        protected global::System.Web.UI.ScriptManager ajaxkit;
         
         /// <summary>
         /// Label3 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
         
@@ -34,8 +34,8 @@ namespace SIME {
         /// Label1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
         
@@ -43,8 +43,8 @@ namespace SIME {
         /// txtDoc control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDoc;
         
@@ -52,8 +52,8 @@ namespace SIME {
         /// bt_buscar control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button bt_buscar;
         
@@ -61,8 +61,8 @@ namespace SIME {
         /// Panel_dados control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel_dados;
         
@@ -70,8 +70,8 @@ namespace SIME {
         /// ComboClientes control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ComboClientes;
         
@@ -79,8 +79,8 @@ namespace SIME {
         /// bt_confirma control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button bt_confirma;
         
@@ -88,8 +88,8 @@ namespace SIME {
         /// LabDados control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabDados;
         
@@ -97,8 +97,8 @@ namespace SIME {
         /// btAltera control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btAltera;
         
@@ -106,8 +106,8 @@ namespace SIME {
         /// btProximo control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btProximo;
         
@@ -115,8 +115,8 @@ namespace SIME {
         /// CaixaMensagem1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Apresentacao.Controles.Mensagem CaixaMensagem1;
         
@@ -124,8 +124,8 @@ namespace SIME {
         /// plnPopUp_Cliente control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.ModalPopupExtender plnPopUp_Cliente;
         
@@ -133,8 +133,8 @@ namespace SIME {
         /// Panel_Cliente control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel_Cliente;
         
@@ -142,8 +142,8 @@ namespace SIME {
         /// labFechar control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label labFechar;
         
@@ -151,8 +151,8 @@ namespace SIME {
         /// cmdFechar control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdFechar;
         
@@ -160,8 +160,8 @@ namespace SIME {
         /// txtNome control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNome;
         
@@ -169,8 +169,8 @@ namespace SIME {
         /// UpdatePanel5 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel5;
         
@@ -178,8 +178,8 @@ namespace SIME {
         /// TXTCep control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTCep;
         
@@ -187,8 +187,8 @@ namespace SIME {
         /// TXTCEP_MaskedEditExtender control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.MaskedEditExtender TXTCEP_MaskedEditExtender;
         
@@ -196,8 +196,8 @@ namespace SIME {
         /// BTBuscaCep0 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton BTBuscaCep0;
         
@@ -205,8 +205,8 @@ namespace SIME {
         /// UpdatePanel2 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel2;
         
@@ -214,8 +214,8 @@ namespace SIME {
         /// TXTEndereco control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTEndereco;
         
@@ -223,8 +223,8 @@ namespace SIME {
         /// UpdatePanel3 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel3;
         
@@ -232,8 +232,8 @@ namespace SIME {
         /// TXTBairro control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTBairro;
         
@@ -241,8 +241,8 @@ namespace SIME {
         /// UpdatePanel4 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel4;
         
@@ -250,8 +250,8 @@ namespace SIME {
         /// CobUF control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList CobUF;
         
@@ -259,8 +259,8 @@ namespace SIME {
         /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
@@ -268,8 +268,8 @@ namespace SIME {
         /// CobCidade control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList CobCidade;
         
@@ -277,8 +277,8 @@ namespace SIME {
         /// montaListadeCidades control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button montaListadeCidades;
         
@@ -286,8 +286,8 @@ namespace SIME {
         /// TXTCPF control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTCPF;
         
@@ -295,8 +295,8 @@ namespace SIME {
         /// TXTDOC1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTDOC1;
         
@@ -304,8 +304,8 @@ namespace SIME {
         /// TXTDtNascimento control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTDtNascimento;
         
@@ -313,8 +313,8 @@ namespace SIME {
         /// TXTDtNascimento_MaskedEditExtender control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.MaskedEditExtender TXTDtNascimento_MaskedEditExtender;
         
@@ -322,8 +322,8 @@ namespace SIME {
         /// TXTTelefone control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTTelefone;
         
@@ -331,8 +331,8 @@ namespace SIME {
         /// TXTTelefone_MaskedEditExtender control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.MaskedEditExtender TXTTelefone_MaskedEditExtender;
         
@@ -340,8 +340,8 @@ namespace SIME {
         /// CobOperadora control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList CobOperadora;
         
@@ -349,8 +349,8 @@ namespace SIME {
         /// TXTEmail control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTEmail;
         
@@ -358,8 +358,8 @@ namespace SIME {
         /// TXTreferencia control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXTreferencia;
         
@@ -367,8 +367,8 @@ namespace SIME {
         /// BtGravar control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtGravar;
         

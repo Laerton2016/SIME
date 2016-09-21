@@ -7,6 +7,8 @@ using WindowsFormsApplication2;
 using TestaSolucao.nfE;
 using ADODB;
 using System.Threading;
+using SIME.Class.DAO;
+using SIME.Class.ProdutoClass;
 
 namespace TestaSolucao
 {
@@ -16,12 +18,11 @@ namespace TestaSolucao
         {
             try
             {
-                new SIME.Estorna(39820);
+                new SIME.Estorna(38640);
                 //SIME.Estorna estorno = new SIME.Estorna();
-                // estorno.ajustaprec(1.13, 48);
+                //estorno.ajustaprec(1.13, 48);
                 //Ajuste ajuste = new Ajuste();
                 //ajuste.AjustarAll(3);
-
                 Console.WriteLine("Cancelamento de venda realizado.");
             }
             catch (Exception e)

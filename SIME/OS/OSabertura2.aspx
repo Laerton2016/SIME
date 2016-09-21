@@ -5,8 +5,8 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="Ajax" %>
 <%@ Register Src="~/Controles/Mensagem.ascx" TagName="Mensagem" TagPrefix="msg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <Ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-    </Ajax:ToolkitScriptManager>
+    <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager>
     <table style="width: 100%;">
         <tr>
             <td class="rotulo" colspan="3">

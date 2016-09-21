@@ -1,5 +1,6 @@
 ﻿using SIME.Class.DAO;
 using SIME.Class.primitivo;
+using SIME.Class.ProdutoClass;
 using System;
 using System.Collections.Generic;
 using System.Linq;

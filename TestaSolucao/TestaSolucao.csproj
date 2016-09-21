@@ -108,12 +108,6 @@
     <Compile Include="Venda.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SIME\SIME.csproj">
-      <Project>{4DE680E9-4C13-49A1-A42D-CD9155EDCF23}</Project>
-      <Name>SIME</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
@@ -159,8 +153,15 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Properties\app.manifest" />
     <None Include="TestaSolucao_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SIME\SIME.csproj">
+      <Project>{4de680e9-4c13-49a1-a42d-cd9155edcf23}</Project>
+      <Name>SIME</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -109,8 +109,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <Ajax:ToolkitScriptManager ID="ajaxkit" runat="server">
-    </Ajax:ToolkitScriptManager>
+    <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager>
     <asp:Panel ID="panelProdutos" runat="server">
         <asp:UpdatePanel ID="UpProdutos" runat="server">
             <ContentTemplate>

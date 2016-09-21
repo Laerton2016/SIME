@@ -12,8 +12,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <Ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-    </Ajax:ToolkitScriptManager>
+    <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager>
     <Ajax:DropShadowExtender ID="dados1" runat = "server" TargetControlID = "panel3" Opacity = "0.8"
     Rounded = "true" TrackPosition = "true" ></Ajax:DropShadowExtender>
     <div style="height: 158px">

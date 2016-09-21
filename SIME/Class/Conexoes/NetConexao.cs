@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.OleDb;
+using SIME.Class.Conexoes;
+using System.Data;
+using FirebirdSql.Data.FirebirdClient;
+
 
 namespace SIME.Class
 {
@@ -11,25 +15,25 @@ namespace SIME.Class
     /// <Autor>Laerton Marques de Figueiredo</Autor>
     /// <Data>15/01/2016</Data>
     /// </summary>
-    public class NetConexao
+    public class NetConexao:ConexoesAbs
     {
         private OleDbConnection _simeconnect;
         private OleDbConnection _contas;
-        private OleDbConnection _smallConect;
-        private static NetConexao _instance;
-
-        private String _simeRede = @"\\100.0.0.254\c\novo\", _smallRede = @"Dsn=Small;Driver={Firebird/InterBase(r) driver};dbname=100.0.0.250:C:/base/SMALL.GDB;charset=NONE;uid=SYSDBA";
-        private String _simeLocal = @"~\dados\", _smallLocal = @"Dsn=Small;Driver={Firebird/InterBase(r) driver};dbname=100.0.0.250:C:/base/SMALL.GDB;charset=NONE;uid=SYSDBA";
+        private FbConnection _smallConect;
+        
+        protected static NetConexao instance;
+        private String sime;
+        private String contas;
+        
 
         private NetConexao()
         {
-            String sime = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + _simeRede + "BD4.mdb;Persist Security Info=False;Jet OLEDB:Database Password=''";
-            String contas = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source= Server.MapPath(" + _simeRede + "contas.mdb);Persist Security Info=False;Jet OLEDB:Database Password=495798";
-
+            sime  = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + _simeLocal + "BD4.mdb;Persist Security Info=False;Jet OLEDB:Database Password=''";
+            contas = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source= Server.MapPath(" + _simeLocal + "contas.mdb);Persist Security Info=False;Jet OLEDB:Database Password=495798";
+            _smallConect = new FbConnection();
+            _contas = new OleDbConnection();
+            _simeconnect = new OleDbConnection();
             
-            _simeconnect = new OleDbConnection(sime);
-            _smallConect = new OleDbConnection(_smallRede);
-            _contas = new OleDbConnection(contas);
         }
 
         /// <summary>
@@ -38,27 +42,30 @@ namespace SIME.Class
         /// <returns>Objeto netconexao instanciado</returns>
         public static NetConexao Instance()
         {
-            if (_instance == null)
+            if (instance == null)
             {
-                _instance = new NetConexao();
+                instance = new NetConexao();
             }
-            return _instance;
+            
+            return instance;
         }
 
         /// <summary>
         /// Método retorna uma cocnexão com o banco de dados DB4 do sime 
         /// </summary>
         /// <returns>Oledb Connection</returns>
-        public OleDbConnection GetSimeConnect()
+        public override  IDbConnection GetSimeConnect()
         {
+            if (_simeconnect.State == ConnectionState.Closed) _simeconnect.ConnectionString = sime;
             return _simeconnect;
         }
         /// <summary>
         /// Método retorna uma conexão com o banco de dados Small.GBD
         /// </summary>
         /// <returns>Oldb Connection</returns>
-        public OleDbConnection GetSmallConnect()
+        public override IDbConnection GetSmallConnect()
         {
+            if (_smallConect.State == ConnectionState.Closed) _smallConect.ConnectionString=_smallLocal;
             return _smallConect;
         }
 
@@ -66,8 +73,9 @@ namespace SIME.Class
         /// Método retona uma conexão com o banco de dados contas
         /// </summary>
         /// <returns>Oledb Connection</returns>
-        public OleDbConnection GetContasConnect()
+        public override IDbConnection GetContasConnect()
         {
+            if (_contas.State == ConnectionState.Closed) _contas.ConnectionString = contas;
             return _contas;
         }
 

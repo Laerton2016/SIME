@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace SIME.Class.primitivo
@@ -8,11 +9,25 @@ namespace SIME.Class.primitivo
     /// <summary>
     /// Classe que cuida de um item de uma venda;
     /// </summary>
+    [DataContract]
     public class NetItemVenda
     {
-        private Int64 _id_produto, _quantidade, _id, _id_venda, _loja, _id_fornecedor;
-        private float _valor;
-        private String _nf;
+        [DataMember]
+        internal Int64 _id_produto;
+        [DataMember]
+        internal Int64 _quantidade;
+        [DataMember]
+        internal Int64 _id;
+        [DataMember]
+        internal Int64 _id_venda;
+        [DataMember]
+        internal Int64 _loja;
+        [DataMember]
+        internal Int64 _id_fornecedor;
+        [DataMember]
+        internal float _valor;
+        [DataMember]
+        internal String _nf;
 
         public long Id_produto
         {
@@ -118,6 +133,19 @@ namespace SIME.Class.primitivo
             }
         }
 
+        public override string ToString()
+        {
+            return "Cod produto: " + this._id_produto + " Quantidade: "+ this._quantidade + " Valor unitário:" + this.Valor.ToString("N") + " Valor total: " + (this.Valor * this.Quantidade).ToString("N");
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (((NetItemVenda)obj).Id_produto == this.Id_produto && ((NetItemVenda)obj).Quantidade == this.Quantidade && ((NetItemVenda)obj).Id == this.Id)
+            {
+                return true;
+            }
+            return false;
+        }
         public NetItemVenda()
         {
             Id = 0;
