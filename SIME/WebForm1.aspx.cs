@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using ADODB;
+using SIME.Class;
 
 namespace SIME
 {
@@ -12,7 +13,7 @@ namespace SIME
     {
         private SIME.Class.Usuario userAtual;
         private Boolean podeesxcluir = false;
-
+        private FronteCamapanha campanha = new FronteCamapanha();
         protected void Page_Load(object sender, EventArgs e)
         {
             userAtual = this.Master.getUsarioAtual();
@@ -39,7 +40,7 @@ namespace SIME
 
             try
             {
-                SIME.Class.Cliente cliente = new Class.Cliente(Int32.Parse(id_cliente.Text), new Conexao().getDb4());
+                /*SIME.Class.Cliente cliente = new Class.Cliente(Int32.Parse(id_cliente.Text), new Conexao().getDb4());
 
                 //6720 - Toner Universal 85A 
                 //6660 - Toner 83A
@@ -48,9 +49,18 @@ namespace SIME
                 resultada += "<br/>" + monta(cliente, 6804);
                 resultada += "<br/>" + monta(cliente, 6660);
                 resultada += "<br/>" + monta(cliente, 6805);
-                //Montando a grade
+                //Montando a grade*/
+                var cliente = campanha.BuscaCliente(Int64.Parse(id_cliente.Text));
+                var produto = campanha.BuscaProduto(6190);
+                var produto1 = campanha.BuscaProduto(6804);
+                var produto2 = campanha.BuscaProduto(6660);
+                var produto3 = campanha.BuscaProduto(6805);
+                labresultado.Text = campanha.monta(cliente, produto, 4) ;
+                labresultado.Text += campanha.monta(cliente, produto1, 4);
+                labresultado.Text += campanha.monta(cliente, produto2, 4);
+                labresultado.Text += campanha.monta(cliente, produto3, 4);
 
-                labresultado.Text = resultada;
+
 
             }
             catch (Exception E)

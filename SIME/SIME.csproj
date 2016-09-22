@@ -337,6 +337,7 @@
     <Compile Include="Class\DAO\DAOItemOrcamento.cs" />
     <Compile Include="Class\DAO\DAOOrcamento.cs" />
     <Compile Include="Class\DAO\DAOSerieMaquina.cs" />
+    <Compile Include="Class\FronteCamapanha.cs" />
     <Compile Include="Class\Orcamento\FacedeOrcamento.cs" />
     <Compile Include="Class\Orcamento\FactoryItemOrcamento.cs" />
     <Compile Include="Class\Orcamento\FactoryOrcamento.cs" />

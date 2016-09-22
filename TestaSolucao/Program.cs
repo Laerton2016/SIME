@@ -18,7 +18,7 @@ namespace TestaSolucao
         {
             try
             {
-                new SIME.Estorna(38640);
+                //new SIME.Estorna(38640);
                 //SIME.Estorna estorno = new SIME.Estorna();
                 //estorno.ajustaprec(1.13, 48);
                 //Ajuste ajuste = new Ajuste();

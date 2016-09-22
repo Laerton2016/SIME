@@ -109,14 +109,50 @@ namespace SIME.Class.DAO
             return Persiste(SQL, t, connection, trans);
         }
 
-        private List<NetItemVenda> itemBonificado (DateTime dtinicio, DateTime dtFim, Int64 idProduto, Int64 idCLiente)
+        public List<NetItemVenda> ItemBonificado (DateTime dtinicio, DateTime dtFim, Int64 idProduto, Int64 idCLiente)
+        {
+            String SQL = "SELECT Saída.*" +
+                         "FROM Cod_sai INNER JOIN Saída ON Cod_sai.Cod_sai = Saída.cod_sai " +
+                         "WHERE(((Cod_sai.Data)Between #" + dtinicio.ToString("dd/MM/yyyy") + "# And #" + dtFim.ToString("dd/MM/yyyy") + "#) and saída.desconto = 0 AND ((Cod_sai.Cod_cliente)=" + idCLiente + ") AND ((Saída.[Cod do CD])=" + idProduto + "));";
+            return buscaItensVendaPeriodo(SQL);
+            
+        }
+        /// <summary>
+        /// Método efetua uma busca de itens vendidos a partir de uma instrução SQL repassado como paramentro de entrada
+        /// </summary>
+        /// <param name="SQL">Instrução SQL </param>
+        /// <returns>Lista de resultados de NetItensVendido</returns>
+        private List<NetItemVenda> buscaItensVendaPeriodo(String SQL)
         {
             List<NetItemVenda> retorno = new List<NetItemVenda>();
-            String SQL = "SELECT Saída.*, Cod_sai.Data, Saída.[Cod do CD] " +
-                         "FROM Cod_sai INNER JOIN Saída ON Cod_sai.Cod_sai = Saída.cod_sai " +
-                         "WHERE(((Cod_sai.Data)Between #1/1/2000# And #8/31/2016#) AND ((Cod_sai.Cod_cliente)=77) AND ((Saída.[Cod do CD])=6570));";
+
+            using (var connection = (OleDbConnection)NetConexao.Instance().GetSimeConnect())
+            {
+                connection.Open();
+                var command = new OleDbCommand(SQL, connection);
+                OleDbDataReader dr = command.ExecuteReader();
+                while (dr.Read())
+                {
+                    retorno.Add(MontaItemVenda(dr));
+                }
+            }
 
             return retorno;
+        }
+        /// <summary>
+        /// Busca itens vendidos a partir de uma faixa de data, código do produto e do cliente
+        /// </summary>
+        /// <param name="dtinicio">Data de inicio de busca</param>
+        /// <param name="dtFim">Data de fim de busca</param>
+        /// <param name="idProduto">Id do produto</param>
+        /// <param name="idCLiente">Id do Cliente</param>
+        /// <returns></returns>
+        public List<NetItemVenda> ItensVendidosPeriodo(DateTime dtinicio, DateTime dtFim, Int64 idProduto, Int64 idCLiente)
+        {
+            String SQL = "SELECT Saída.* " +
+                         "FROM Cod_sai INNER JOIN Saída ON Cod_sai.Cod_sai = Saída.cod_sai " +
+                         "WHERE(((Cod_sai.Data)Between #" + dtinicio.ToString("dd/MM/yyyy") + "# And #" + dtFim.ToString("dd/MM/yyyy") + "#) and saída.desconto > 0 AND ((Cod_sai.Cod_cliente)=" + idCLiente + ") AND ((Saída.[Cod do CD])=" + idProduto + "));";
+            return buscaItensVendaPeriodo(SQL);
         }
 
         private NetItemVenda Persiste(String SQL, NetItemVenda t, OleDbConnection connection, OleDbTransaction trans)

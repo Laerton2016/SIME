@@ -43,5 +43,10 @@ namespace SIME.Class.DAO
         /// </summary>
         /// <returns>DAOOS</returns>
         public static DAOOS CriaDaoOS(){return new DAOOS();}
+
+        public static DAOItemVenda CriaDAOItemVenda()
+        {
+            return new DAOItemVenda();
+        }
     }
 }
