@@ -40,26 +40,29 @@ namespace SIME
 
             try
             {
-                /*SIME.Class.Cliente cliente = new Class.Cliente(Int32.Parse(id_cliente.Text), new Conexao().getDb4());
-
-                //6720 - Toner Universal 85A 
-                //6660 - Toner 83A
-
-                String resultada =  monta(cliente, 6190);
-                resultada += "<br/>" + monta(cliente, 6804);
-                resultada += "<br/>" + monta(cliente, 6660);
-                resultada += "<br/>" + monta(cliente, 6805);
                 //Montando a grade*/
                 var cliente = campanha.BuscaCliente(Int64.Parse(id_cliente.Text));
-                var produto = campanha.BuscaProduto(6190);
-                var produto1 = campanha.BuscaProduto(6804);
-                var produto2 = campanha.BuscaProduto(6660);
-                var produto3 = campanha.BuscaProduto(6805);
-                labresultado.Text = campanha.monta(cliente, produto, 4) ;
-                labresultado.Text += campanha.monta(cliente, produto1, 4);
-                labresultado.Text += campanha.monta(cliente, produto2, 4);
-                labresultado.Text += campanha.monta(cliente, produto3, 4);
+                if (cliente.Fidelizado)
+                {
+                    labresultado.Text = "<div><h1>" + cliente.Nome + "<h1>" +
+                "<h3>Cliente fidelizado desde: " + cliente.DataFidelizacao.ToShortDateString() + "</h3><ul>";
 
+                    Int64[] codigos = { 6190, 6804, 6660, 6805 };
+
+                    for (int i = 0; i < codigos.Length; i++)
+                    {
+                        labresultado.Text += campanha.monta(cliente, campanha.BuscaProduto(codigos[i]), 4);
+                    }
+                    
+                }
+                else
+                {
+                    labresultado.Text = "<div><h1>" + cliente.Nome + "<h1>" +
+                "<h3>Cliente não fidelizado </h3><ul>";
+
+                }
+
+                labresultado.Text += "</ul></div>";
 
 
             }

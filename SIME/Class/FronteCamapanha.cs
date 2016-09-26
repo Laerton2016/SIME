@@ -89,12 +89,12 @@ namespace SIME.Class
                 q1 += item.Quantidade;
             }
 
-            String montagem = "<div><h1>" + cliente.Nome + "<h1>" +
-                "<h3>Cliente fidelizado desde: " + cliente.DataFidelizacao.ToShortDateString() + "</h3><ul>";
+            String montagem = "<li>Produto:" + produto.Descricao + "<ul><il><il> Quantidade comprado: " + q1 + "</il></li><li> Bonus no período: " + (q1 / qBonificar) + " </li><li>Bonus usuado: " + q + "</li><li> Bonus disponíveis: " + ((q1 / qBonificar) - q) + "</li></ul></li>";
 
-            montagem += "<li>Produto:" + produto.Descricao + "<ul><il><il> Quantidade comprado: " + q1 + "</il></li><li> Bonus no período: " + cliente.DataFidelizacao.ToShortDateString() + " a " + DateTime.Now +" </li><li>Bonus usuado: " + q + "</li><li> Bonus disponíveis: " + ((q1/qBonificar) - q) + "</li></ul></li></ul></div>";
-
+            
             return montagem;
         }
+
+     
     }
 }

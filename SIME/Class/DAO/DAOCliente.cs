@@ -89,7 +89,7 @@ namespace SIME.Class.DAO
             cliente.Classificacao = dr["classificação"].ToString();
             cliente.Cpfcnpj = dr["CNPJ"].ToString();
             cliente.Fidelizado = (dr["fidelidade"] is DBNull)?false: (Boolean)dr["fidelidade"];
-            if (cliente.Fidelizado) { cliente.DataFidelizacao = (DateTime)dr["data_adesao"]; }
+            if (cliente.Fidelizado) { cliente.DataFidelizacao = (DateTime)dr["dt_inicio"]; }
             cliente.Datanascimento = (dr["nascimento"] is DBNull) ? DateTime.Now : (DateTime)dr["nascimento"];
             cliente.Email = (dr["e-mail"] is DBNull) ? "" : dr["e-mail"].ToString();
             cliente.End = (dr["end"] is DBNull) ? "" : dr["end"].ToString();
