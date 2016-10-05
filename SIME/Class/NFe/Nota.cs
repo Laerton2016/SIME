@@ -22,7 +22,9 @@ namespace WindowsFormsApplication2
         }
 
         public String getData() {
-            DateTime dt = Convert.ToDateTime (retornoDado("dEmi"));
+            String termo = retornoDado("dhEmi");
+            termo = termo.Split(new char[] { 'T' })[0];
+            DateTime dt = Convert.ToDateTime (termo);
             return dt.Day.ToString() + "/" +  dt.Month.ToString() + "/" + dt.Year.ToString(); 
         }
 

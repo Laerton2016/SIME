@@ -8,7 +8,7 @@ namespace SIME.Class
 {
     public class Atendimento
     {
-        private Conexao conex;
+        //private Conexao conex;
         private Recordset RsDados;
         private String SQL;
         private List<String[]> listaAtendimento;

@@ -11,8 +11,8 @@
 <body>
     <form id="form1" runat="server">
 
-        <Ajax:ToolkitScriptManager ID="ajaxkit" runat="server">
-        </Ajax:ToolkitScriptManager>
+       <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager>
 
         <asp:UpdatePanel ID="buscaprecopainel" runat="server">
             <ContentTemplate>

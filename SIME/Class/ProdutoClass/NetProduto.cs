@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SIME.Class.primitivo
+namespace SIME.Class.ProdutoClass
 {
     /// <summary>
     /// Class que cuida dos dados de um produto

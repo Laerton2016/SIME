@@ -51,7 +51,7 @@ namespace SIME
                 Usuario usuarioAtual = usuario.buscaUsuario(txtUser.Text);
                 if (usuarioAtual == null)
                 {
-                    laberrousuario.Text = "Usuário inválido";
+                    laberrousuario.Text = "Usuário ou senha inválido";
 
                 }
                 else
@@ -59,7 +59,7 @@ namespace SIME
                     //usuarioAtual = usuario.buscaUsuario(txtUser.Text);
                     if (!usuarioAtual.validaSenha(TxtSenha.Text))
                     {
-                        laberosenha.Text = "Senha inválida";
+                        laberosenha.Text = "Usuário ou senha inválido";
                     }
                     else
                     {

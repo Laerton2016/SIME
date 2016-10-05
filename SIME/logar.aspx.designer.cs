@@ -19,7 +19,7 @@ namespace SIME {
         /// Auto-generated Data.
         /// To modify move Data declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
+        //protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
         
         /// <summary>
         /// dados1 control.

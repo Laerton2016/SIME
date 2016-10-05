@@ -13,7 +13,7 @@ namespace SIME.Class.primitivo
     public class NetCliente
     {
         System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("pt-BR");
-        private Int32 cod;
+        private Int64 cod;
         private String nome, end, telefone, operadora, cpfcnpj, email, cep, cidade, _UF, _IE, referencia, bairro;
         private Boolean mala, pessoaJuridica, restrito;
         private DateTime dataCadastro;
@@ -54,7 +54,7 @@ namespace SIME.Class.primitivo
         /// <summary>
         /// Codigo do cliente - ID
         /// </summary>
-        public int Cod
+        public Int64 Cod
         {
             get
             {
