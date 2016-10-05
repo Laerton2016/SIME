@@ -51,8 +51,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <Ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-    </Ajax:ToolkitScriptManager>
+    <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager>
     
 <asp:Panel ID= "inventario2014" runat ="server">
     <table style="width:100%;">

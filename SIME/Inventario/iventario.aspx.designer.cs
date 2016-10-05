@@ -13,13 +13,13 @@ namespace SIME.Inventario {
     public partial class iventario {
         
         /// <summary>
-        /// ToolkitScriptManager1 control.
+        /// ajaxkit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
+        protected global::System.Web.UI.ScriptManager ajaxkit;
         
         /// <summary>
         /// inventario2014 control.

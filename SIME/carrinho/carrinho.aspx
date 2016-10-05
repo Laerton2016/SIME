@@ -5,8 +5,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-     <ajax:toolkitscriptmanager ID="ajaxkit" runat="server">
-    </ajax:toolkitscriptmanager> 
+    <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager> 
     <div id="Cabecalho">
         <div id="Menu">
             <asp:Label Text="Digite informações sobre o produto que deseja buscar:" CssClass="textEntry" runat ="server"></asp:Label><br />

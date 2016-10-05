@@ -6,8 +6,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <Ajax:ToolkitScriptManager ID="ajaxkit" runat="server">
-    </Ajax:ToolkitScriptManager>
+  <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager>
     <table style="width: 100%;">
         <tr>
             <td class="style42" rowspan="2">

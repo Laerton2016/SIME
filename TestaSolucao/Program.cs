@@ -18,11 +18,9 @@ namespace TestaSolucao
         {
             try
             {
-               // SIME.Class.DAO.DAOProduto dao = new DAOProduto();
-                //NetProduto produto = dao.Buscar(21);
-                //Console.WriteLine(produto);
-                //Console.Read();
-                new SIME.Estorna(39842);
+               
+               
+                new SIME.Estorna(39741);
                 //SIME.Estorna estorno = new SIME.Estorna();
                 //estorno.ajustaprec(1.13, 48);
                 //Ajuste ajuste = new Ajuste();

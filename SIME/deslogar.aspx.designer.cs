@@ -13,20 +13,20 @@ namespace SIME {
     public partial class deslogar {
         
         /// <summary>
-        /// ToolkitScriptManager1 control.
+        /// ajaxkit control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
+        protected global::System.Web.UI.ScriptManager ajaxkit;
         
         /// <summary>
         /// dados1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.DropShadowExtender dados1;
         
@@ -34,8 +34,8 @@ namespace SIME {
         /// Panel3 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel3;
         
@@ -43,8 +43,8 @@ namespace SIME {
         /// Label1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
         
@@ -52,8 +52,8 @@ namespace SIME {
         /// btDeslogar control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btDeslogar;
         

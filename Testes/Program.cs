@@ -19,14 +19,18 @@ namespace Testes
 
         static void Main(string[] args)
         {
-            CassandraItem dao = new CassandraItem();
-            NetVenda venda = ConexRedis.ResgataCarrinhRedis(1);
-            ConexRedis.GravaCarrinhoRedis(1,venda,1);
-            Console.WriteLine(venda.Id);
-            Console.Read();
 
-            
+            DAOItemVenda dao = new DAOItemVenda();
+            var lista = dao.ItemBonificado(new DateTime(2000, 01,01), new DateTime(2000, 01, 01), 6190, 77);
+            Int64 q = 0;
 
+            foreach (var item in lista)
+            {
+                q += item.Quantidade;
+            }
+            Console.WriteLine("Foram vendidos " + q + " unidades do item " + lista[0].Id_produto + " para o cliente do id " + 77);
+
+            Console.ReadKey();
         }
     }
 }

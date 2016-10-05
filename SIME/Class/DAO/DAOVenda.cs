@@ -120,6 +120,7 @@ namespace SIME.Class.DAO
             return BuscaLista(SQL);
         }
 
+       
         public void Excluir(NetVenda t)
         {
             throw new NotImplementedException();

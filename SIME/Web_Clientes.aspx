@@ -46,8 +46,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <Ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
-    </Ajax:ToolkitScriptManager>
+   <asp:ScriptManager ID="ajaxkit" runat="server">
+    </asp:ScriptManager>
     <asp:UpdatePanel ID="UpPanel_dados" runat="server" Visible = "true">
         <ContentTemplate>
             <table style="width: 100%;">

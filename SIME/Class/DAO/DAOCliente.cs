@@ -83,12 +83,27 @@ namespace SIME.Class.DAO
             
             cliente.Cod = Int64.Parse( dr["cod_cliente"].ToString());
             cliente.Nome = dr["Nome"].ToString();
-            //Incompleto para ser realizado o trabalho de BDNC primeiro
-            //....
+            cliente.Bairro = dr["bairro"].ToString();
+            cliente.Cep = dr["cep"].ToString();
+            cliente.Cidade = dr["cidade"].ToString();
+            cliente.Classificacao = dr["classificação"].ToString();
+            cliente.Cpfcnpj = dr["CNPJ"].ToString();
+            cliente.Fidelizado = (dr["fidelidade"] is DBNull)?false: (Boolean)dr["fidelidade"];
+            if (cliente.Fidelizado) { cliente.DataFidelizacao = (DateTime)dr["data_adesao"]; }
+            cliente.Datanascimento = (dr["nascimento"] is DBNull) ? DateTime.Now : (DateTime)dr["nascimento"];
+            cliente.Email = (dr["e-mail"] is DBNull) ? "" : dr["e-mail"].ToString();
+            cliente.End = (dr["end"] is DBNull) ? "" : dr["end"].ToString();
+            cliente.IE = (dr["insc"] is DBNull) ? "" : dr["insc"].ToString();
+            cliente.PessoaJuridica = (Boolean)dr["fj"];
+            cliente.Referencia = (dr["referencia"] is DBNull) ? "" : dr["referencia"].ToString();
+            cliente.Restrito = (dr["restrito"] is DBNull) ? false : (bool)dr["restrito"];
+            cliente.Telefone = (dr["tele1"] is DBNull) ? "" : dr["tele1"].ToString();
+            cliente.UF = dr["uf"].ToString();
             cliente.Bairro = dr["bairro"].ToString();
             cliente.Cep = dr["Cep"].ToString();
             cliente.Cidade = dr["cidade"].ToString();
             cliente.Classificacao = dr["classificação"].ToString();
+            //incompleto para dados complementares como referencias comerciais e contatos.
             return cliente;
             
         }
