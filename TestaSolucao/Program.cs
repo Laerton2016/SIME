@@ -16,9 +16,14 @@ namespace TestaSolucao
         {
             try
             {
-                new SIME.Estorna(39820);
+                Console.WriteLine("Digite o código da venda");
+                //ConsoleKeyInfo key = Console.ReadKey();
+
+                int codigo = int.Parse(Console.ReadLine());
+                new SIME.Estorna(codigo);
+                //Console.WriteLine(codigo);
                 //SIME.Estorna estorno = new SIME.Estorna();
-                // estorno.ajustaprec(1.13, 48);
+                //estorno.ajustaprec(1.13, 48);
                 //Ajuste ajuste = new Ajuste();
                 //ajuste.AjustarAll(3);
 
@@ -26,7 +31,6 @@ namespace TestaSolucao
             }
             catch (Exception e)
             {
-
                 Console.WriteLine(e.Message);
             }
             Console.Read();
