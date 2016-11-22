@@ -9,6 +9,10 @@
     </asp:ScriptManager> 
     <div id="Cabecalho">
         <div id="Menu">
+            <asp:Label Text= "Defina qual cliente pertence esta pré-venda:" CssClass="textEntry" runat ="server"></asp:Label><br />
+            <asp:TextBox ID="txtTermoCliente" CssClass ="caixaTexto" Width ="90%" runat="server" Visible ="true"></asp:TextBox>
+            <asp:Button Id="BtBusca" CssClass="botao" runat="server" Text="Busca" Visible="true"/>
+            <asp:DropDownList ID="CobCliente" CssClass="caixaTexto" Width ="90%" runat="server" Visible ="false"></asp:DropDownList><br />
             <asp:Label Text="Digite informações sobre o produto que deseja buscar:" CssClass="textEntry" runat ="server"></asp:Label><br />
             <asp:TextBox ID="txtTermo" runat="server" CssClass="caixaTexto" Width="40%"></asp:TextBox>
             <asp:RadioButton ID="rdid" Text ="Por código" runat="server" /> 

@@ -28,6 +28,8 @@ namespace SIME.Class.primitivo
         internal float _valor;
         [DataMember]
         internal String _nf;
+        [DataMember]
+        internal String _descricao;
 
         public long Id_produto
         {
@@ -133,9 +135,22 @@ namespace SIME.Class.primitivo
             }
         }
 
+        public string Descricao
+        {
+            get
+            {
+                return _descricao;
+            }
+
+            set
+            {
+                _descricao = value;
+            }
+        }
+
         public override string ToString()
         {
-            return "Cod produto: " + this._id_produto + " Quantidade: "+ this._quantidade + " Valor unitário:" + this.Valor.ToString("N") + " Valor total: " + (this.Valor * this.Quantidade).ToString("N");
+            return "Cod produto: " + this._id_produto + " Descrição: " + _descricao + " Quantidade: "+ this._quantidade + " Valor unitário:" + this.Valor.ToString("N") + " Valor total: " + (this.Valor * this.Quantidade).ToString("N");
         }
 
         public override bool Equals(object obj)

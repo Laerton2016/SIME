@@ -11,6 +11,7 @@ namespace SIME.Class.primitivo
     public class NetVenda
     {
         private DateTime _date;
+        private String _orcamento;
         private Int64 _id_cliente, _id, _id_operador, _id_caixa;
         private float _especie, _cheque, _vale, _cartao;
         private List<NetItemVenda> itens;
@@ -27,6 +28,7 @@ namespace SIME.Class.primitivo
             Cheque = 0;
             Vale = 0;
             Cartao = 0;
+            Orcamento = "0000000000";
             Itens = new List<primitivo.NetItemVenda>();
         }
 
@@ -182,6 +184,17 @@ namespace SIME.Class.primitivo
             }
         }
 
-        
+        public string Orcamento
+        {
+            get
+            {
+                return _orcamento;
+            }
+
+            set
+            {
+                _orcamento = value;
+            }
+        }
     }
 }

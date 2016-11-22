@@ -16,6 +16,7 @@ namespace SIME.Class.Orcamento
         private float _unitario, _custo;
         private String _serie;
         private Status _status;
+        private Produto _produto;
 
         public Item_orcamento(Int64 id_orcamento)
         {
@@ -145,6 +146,19 @@ namespace SIME.Class.Orcamento
             set
             {
                 _id_produto = value;
+            }
+        }
+
+        public Produto Produto
+        {
+            get
+            {
+                return _produto;
+            }
+
+            set
+            {
+                _produto = value;
             }
         }
     }

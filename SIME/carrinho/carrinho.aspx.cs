@@ -69,11 +69,16 @@ namespace SIME.carrinho
             this.CobResult.Items.Clear();
             this.CobResult.Items.Add(new ListItem(netProduto.Descricao, netProduto.ID.ToString()));
         }
-
+        /// <summary>
+        /// Método aciciona ao carrinho o produto, sua quantidae e valor vendido
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void BtAdiciona_Click(object sender, EventArgs e)
         {
             NetItemVenda item = new NetItemVenda();
             item.Id_produto = Int64.Parse(this.CobResult.SelectedItem.Value);
+            item.Descricao = CobResult.SelectedItem.Text;
             item.Quantidade = Int64.Parse(txtQuantidade.Text);
             item.Valor = float.Parse(txtValor.Text);
             _carrinho.AddItem(item);

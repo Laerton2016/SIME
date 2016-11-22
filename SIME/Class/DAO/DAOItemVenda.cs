@@ -70,7 +70,17 @@ namespace SIME.Class.DAO
             {
                 if (connect.State == System.Data.ConnectionState.Closed) connect.Open();
                 OleDbTransaction trans = connect.BeginTransaction();
-                Excluir(t, connect, trans);
+                try
+                {
+                    Excluir(t, connect, trans);
+                    trans.Commit();
+                }
+                catch (Exception e)
+                {
+                    trans.Rollback(); 
+                    throw new Exception(e.Message);
+                }
+                
             }
         }
         /// <summary>

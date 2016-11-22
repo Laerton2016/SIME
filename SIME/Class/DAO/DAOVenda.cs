@@ -120,15 +120,107 @@ namespace SIME.Class.DAO
             return BuscaLista(SQL);
         }
 
-       
+       /// <summary>
+       /// Método exlui uma venda e seus itens do banco de dados 
+       /// </summary>
+       /// <param name="t">Venda que será excluida</param>
         public void Excluir(NetVenda t)
         {
-            throw new NotImplementedException();
+            String SQL = @"Delete * from cod_sai where cod_sai =" + t.Id + ";";
+            DAOItemVenda dao_item = FactoryDAO.CriaDAOItemVenda();
+            using ( var connect = (OleDbConnection) NetConexao.Instance().GetSimeConnect())
+            {
+                connect.Open();
+                var transacao = connect.BeginTransaction();
+                var command = new OleDbCommand(SQL, connect, transacao);
+                try
+                {
+                    command.ExecuteNonQuery();
+                    foreach (var item in t.Itens)
+                    {
+                        dao_item.Excluir(item, connect, transacao);
+                    }
+                    transacao.Commit();
+                }
+                catch (Exception e )
+                {
+                    transacao.Rollback();
+                    throw new Exception (e.Message);
+                }
+            }
+            
         }
 
         public NetVenda Salvar(NetVenda t)
         {
-            throw new NotImplementedException();
+            String SQL = "";
+            if (t.Id == 0)
+            {
+                SQL = @"Insert into cod_sai (data, dado1, cod_cliente, especie, cheque, vale, op, cx, cartao) values (@data, @dado1, @cod_cliente, @especie, @cheque, @vale, @op, @cx, @cartao); ";
+            }
+            else
+            {
+                SQL = @"Update cod_sai set data = @data, dado1 = @dado1, cod_cliente = @cod_cliente, especie = @especie, cheque = @cheque, vale = @vale, op = @op, cx = @cx, cartao = @cartao where cod_sai = @cod_sai;";
+            }
+            return Persiste(SQL, t);
+            
         }
+        /// <summary>
+        /// Método persiste os dados de uma venda e seus itens no banco de dados.
+        /// </summary>
+        /// <param name="sQL">Instrução SLQ para a persistencia</param>
+        /// <param name="t">Objeto a ser persistido</param>
+        /// <returns>Venda com os dados atualizados após apersistencia</returns>
+        private NetVenda Persiste(string sQL, NetVenda t)
+        {
+            DAOItemVenda dao = FactoryDAO.CriaDAOItemVenda();
+            
+            using (var connect =  (OleDbConnection) NetConexao.Instance().GetSimeConnect())
+            {
+                connect.Open();
+                var transacao = connect.BeginTransaction();
+                OleDbCommand command = new OleDbCommand(sQL, connect, transacao);
+                command.Parameters.AddWithValue("@data", t.Date);
+                command.Parameters.AddWithValue("@dado1", t.Orcamento);
+                command.Parameters.AddWithValue("@cod_cliente", t.Idcliente);
+                command.Parameters.AddWithValue("@especie", t.Especie);
+                command.Parameters.AddWithValue("@cheque", t.Cheque);
+                command.Parameters.AddWithValue("@vale", t.Vale);
+                command.Parameters.AddWithValue("@op", t.Idoperador);
+                command.Parameters.AddWithValue("@cx", t.Idcaixa);
+                command.Parameters.AddWithValue("@cartao", t.Cartao);
+                if (t.Id != 0)
+                {
+                    command.Parameters.AddWithValue("@cod_sai", t.Id);
+                }
+                try
+                {
+                    command.ExecuteNonQuery();
+                    command.CommandText = "select max(cod_sai) as Id from cod_sai;";
+                    var dr = command.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        t.Id = long.Parse(dr["id"].ToString());
+                    }
+                    dr.Close();
+
+                    foreach (NetItemVenda item in t.Itens)
+                    {
+                        item.Id_venda = t.Id;
+                        var gravado = dao.Salvar(item, connect, transacao);
+                        item.Id = gravado.Id;
+                    }
+                    transacao.Commit();
+                }
+                catch (Exception e )
+                {
+                    transacao.Rollback();
+                    throw new Exception(e.Message);
+                }
+
+            }
+            return t;
+        }
+        
     }
 }

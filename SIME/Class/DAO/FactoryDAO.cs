@@ -43,10 +43,23 @@ namespace SIME.Class.DAO
         /// </summary>
         /// <returns>DAOOS</returns>
         public static DAOOS CriaDaoOS(){return new DAOOS();}
-
+        /// <summary>
+        /// Método cria um dao de item de venda 
+        /// </summary>
+        /// <returns>Dao de item de venda</returns>
         public static DAOItemVenda CriaDAOItemVenda()
         {
             return new DAOItemVenda();
         }
+        /// <summary>
+        /// Método cria um DAO de usuários
+        /// </summary>
+        /// <returns>DAOUsuarioS</returns>
+        public static DAOUsuario CriaDAOUsuario() { return new DAOUsuario(); }
+        /// <summary>
+        /// Método cria um DAO de venda 
+        /// </summary>
+        /// <returns>Dao de venda </returns>
+        public static DAOVenda CriaDAOVenda() { return new DAOVenda(); }
     }
 }

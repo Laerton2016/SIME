@@ -12,8 +12,8 @@ namespace SIME.Class
     {
 
         private List<String[]> dadosCombo = new List<string[]>();
-        private Int16 cod = 0;
-        private String nome = "";
+       // private Int16 cod = 0;
+       // private String nome = "";
         /// <summary>
         /// Classe que cria o obbjeto do tipo clientes
         /// </summary>

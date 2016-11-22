@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c85b221685a84b12af75fb54c8a6eb11" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.TADICIONALPRODUTO" Width="1.5" PointX="39.5" PointY="211.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAGENDA" Width="1.5" PointX="5.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAGENDAMENTOOS" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAJUSTE" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAJUSTECSOSN" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAJUSTEESTOQUE" Width="1.5" PointX="6" PointY="205.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TALIQUOTA" Width="1.5" PointX="11.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TALTERACAODAV" Width="1.5" PointX="13.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TALUGUEL" Width="1.5" PointX="3" PointY="189.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TANEXOS" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAPLICACAOPRODUTO" Width="1.5" PointX="15.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAVISO" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBANCOCHEQUE" Width="1.5" PointX="15.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBOLETO" Width="1.5" PointX="9.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBOLETOAGRUPADO" Width="1.5" PointX="15.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCAIXA" Width="1.5" PointX="16.5" PointY="202.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCARREGAMENTOMDFE" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCCE" Width="1.5" PointX="15.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCENTROCUSTO" Width="1.5" PointX="14.25" PointY="168.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCESTTEMP" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCFOP" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCHEQUECLIENTE" Width="1.5" PointX="8.25" PointY="200" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCHEQUEFORNECEDOR" Width="1.5" PointX="16.5" PointY="221.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCIDADE" Width="1.5" PointX="0.75" PointY="191.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCIDADEIBGE" Width="1.5" PointX="2.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCLIENTE" Width="1.5" PointX="6" PointY="182.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCODIGOFABRICA" Width="1.5" PointX="16.5" PointY="228.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCOMANDA" Width="1.5" PointX="17.25" PointY="188.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCOMPOSICAO" Width="1.5" PointX="17.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCOMPRA" Width="1.5" PointX="16.5" PointY="232.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONDICIONAL" Width="1.5" PointX="14.25" PointY="177.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONFIGURACAO" Width="1.5" PointX="4.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONSULTASPC" Width="1.5" PointX="3.75" PointY="178.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONTABANCARIA" Width="1.5" PointX="3" PointY="216.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONTAGEMESTOQUE" Width="1.5" PointX="10.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONTROLEMODULO" Width="1.5" PointX="33.75" PointY="171.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONVENIO" Width="1.5" PointX="9" PointY="190.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCONVERSAOCFOPENTRADA" Width="1.5" PointX="17.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCOTACAO" Width="1.5" PointX="5.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCOTACAOFORNECEDOR" Width="1.5" PointX="8" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCST" Width="1.5" PointX="17.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCSTCOFINS" Width="1.5" PointX="17.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCSTICMS" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCSTIPI" Width="1.5" PointX="6.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCSTORIEM" Width="1.5" PointX="24" PointY="173.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCSTPIS" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTE" Width="1.5" PointX="5.25" PointY="231.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTEDOCUMENTOANTERIOR" Width="1.5" PointX="7.5" PointY="233.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTENFEORIGINARIA" Width="1.5" PointX="7.5" PointY="236.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTENFORIGINARIA" Width="1.5" PointX="7.5" PointY="239.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTEOUTROSDOCORIGINARIA" Width="1.5" PointX="7.5" PointY="245.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTEQTDECARGA" Width="1.5" PointX="19.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTEVEICULO" Width="1.5" PointX="7.5" PointY="252.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTEVEICULOSTRANSPORTADO" Width="1.5" PointX="7.5" PointY="248.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TCTRC" Width="1.5" PointX="16.5" PointY="251" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TDADOCONTABILISTA" Width="1.5" PointX="19.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TDAVD2" Width="1.5" PointX="19.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TDAVD3" Width="1.5" PointX="19.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TDESCARREGAMENTOMDFE" Width="1.5" PointX="11.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TDETALHEREDUCAOZ" Width="1.5" PointX="13" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TDOCDESCARREGAMENTOMDFE" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TEMITENTE" Width="1.5" PointX="12" PointY="185.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TENTREGA" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TENTREGANFE" Width="1.5" PointX="10.5" PointY="220.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TESPECIE" Width="1.5" PointX="6.75" PointY="177.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TESTADOS" Width="1.5" PointX="21.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TESTADOSICMSSUBS" Width="1.5" PointX="6.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TESTOQUE" Width="1.5" PointX="26.25" PointY="177.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TETIQUETA" Width="1.5" PointX="21.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORMAPAGAMENTOALUGUEL" Width="1.5" PointX="8.25" PointY="184" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORMAPAGAMENTOCTE" Width="1.5" PointX="24.75" PointY="210.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORMAPAGAMENTOECF" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORMAPAGAMENTONFCE" Width="1.5" PointX="9" PointY="167.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORMAPAGAMENTONFE" Width="1.5" PointX="13.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORMAPAGAMENTONOTAMANUAL" Width="1.5" PointX="15.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORMAPAGAMENTOOS" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFORNECEDOR" Width="1.5" PointX="14.25" PointY="221" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFUNCAO" Width="1.5" PointX="1.5" PointY="204.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TFUNCIONARIO" Width="1.5" PointX="3.75" PointY="199.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TGRADE" Width="1.5" PointX="26.25" PointY="172.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TGRADEITEMPEDIDOCOMPRA" Width="1.5" PointX="2.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TGRUPOCLIENTE" Width="1.5" PointX="3.75" PointY="182.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TGRUPOESTOQUE" Width="1.5" PointX="24" PointY="169.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.THISTORICOSERIAL" Width="1.5" PointX="23.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TICMSEMITENTE" Width="1.5" PointX="23.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TIMPOSTO" Width="1.5" PointX="9.75" PointY="174.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TIMPOSTOISS" Width="1.5" PointX="23.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TIMPOSTOMEDIO" Width="1.5" PointX="24" PointY="164.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TIMPRESSAOMOBILE" Width="1.5" PointX="23.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMAJUSTE" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMALUGUEL" Width="1.5" PointX="14.25" PointY="190.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCOMANDA" Width="1.5" PointX="36.5" PointY="196.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCOMANDAADICIONAL" Width="1.5" PointX="41.75" PointY="198.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCOMPRA" Width="1.5" PointX="18.75" PointY="243.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCOMPRAGRADE" Width="1.5" PointX="31.5" PointY="218.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCOMPRASERIAL" Width="1.5" PointX="31.5" PointY="213.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCONDICIONAL" Width="1.5" PointX="28.5" PointY="198.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCONDICIONALGRADE" Width="1.5" PointX="39.75" PointY="185.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCONDICIONALSERIAL" Width="1.5" PointX="33.75" PointY="201.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCONTAGEMESTOQUE" Width="1.5" PointX="13" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMCOTACAO" Width="1.5" PointX="8" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMDOCUMENTOANTERIORCTE" Width="1.5" PointX="9.75" PointY="239.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMECFGRADE" Width="1.5" PointX="28.5" PointY="188.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMECFSERIAL" Width="1.5" PointX="31.5" PointY="185.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMNFCEGRADE" Width="1.5" PointX="28.5" PointY="206.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMNFCESERIAL" Width="1.5" PointX="34.5" PointY="206.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMNFEVALIDADEESTOQUE" Width="1.5" PointX="8" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMNFEVEICULO" Width="1.5" PointX="13.5" PointY="213.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMNOTACONSUMIDORGRADE" Width="1.5" PointX="18.75" PointY="164" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMNOTACONSUMIDORSERIAL" Width="1.5" PointX="23.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMOPCOMPOSICAO" Width="1.5" PointX="34.5" PointY="215.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMOPGRADE" Width="1.5" PointX="28.5" PointY="182.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMORCAMENTOGRADE" Width="1.5" PointX="31.5" PointY="192.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMORCAMENTOSERIAL" Width="1.5" PointX="31.5" PointY="202.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMORDEMPRODUCAO" Width="1.5" PointX="31.5" PointY="179.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMOS" Width="1.5" PointX="37.5" PointY="184.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMPEDIDOCOMPRA" Width="1.5" PointX="21.75" PointY="236.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMPEDIDOVENDA" Width="1.5" PointX="28.5" PointY="215.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMPEDIDOVENDAGRADE" Width="1.5" PointX="30.75" PointY="197.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMPEDIDOVENDASERIAL" Width="1.5" PointX="33.75" PointY="197.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMPREVENDA" Width="1.5" PointX="11.25" PointY="168.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMPREVENDAGRADE" Width="1.5" PointX="28.5" PointY="193.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMPREVENDASERIAL" Width="1.5" PointX="13.5" PointY="172.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMTABELAPRECO" Width="1.5" PointX="40.5" PointY="190.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMVENDAECF" Width="1.5" PointX="34.5" PointY="179.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITEMVENDANFCE" Width="1.5" PointX="39.5" PointY="196" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITENNFEGRADE" Width="1.5" PointX="31.5" PointY="206.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITENNFESERIAL" Width="1.5" PointX="34.5" PointY="211" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITENNOTACONSUMIDOR" Width="1.5" PointX="16.5" PointY="161.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITENSORCAMENTO" Width="1.5" PointX="22.5" PointY="204.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TITENSVENDANFE" Width="1.5" PointX="22.5" PointY="214.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TLACREMDFE" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TLISTASERVICO" Width="1.5" PointX="17.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TLOGRADOURO" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMARCA" Width="1.5" PointX="24" PointY="161.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMDFE" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMEIOPAGAMENTOVENDAECF" Width="1.5" PointX="25.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMENSAGEMNFE" Width="1.5" PointX="24" PointY="158.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMESA" Width="1.5" PointX="4.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMOTIVOCANCELAMENTOVENDA" Width="1.5" PointX="18" PointY="172.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMOTORISTA" Width="1.5" PointX="6.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMOTORISTAMDFE" Width="1.5" PointX="25.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TMOVBANCO" Width="1.5" PointX="5.25" PointY="219.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TNFCEINUTILIZADA" Width="1.5" PointX="25.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TNFEINUTILIZADAS" Width="1.5" PointX="25.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TNOTACONSUMIDOR" Width="1.5" PointX="14.25" PointY="197.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TNOTACTRC" Width="1.5" PointX="18.75" PointY="257.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TOBJETOSOS" Width="1.5" PointX="21" PointY="167.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TOPERACAO" Width="1.5" PointX="14.25" PointY="253.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TOPERACAOL" Width="1.5" PointX="25.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TOPERADORACARTAO" Width="1.5" PointX="11.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TORCAMENTO" Width="1.5" PointX="20.25" PointY="187.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TORDEMPRODUCAO" Width="1.5" PointX="29.25" PointY="169.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TORIGEM" Width="1.5" PointX="13.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TOS" Width="1.5" PointX="23.25" PointY="183.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFMD5" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR06" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR07" Width="1.5" PointX="27.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR50" Width="1.5" PointX="27.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR54" Width="1.5" PointX="27.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR60A" Width="1.5" PointX="15.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR60D" Width="1.5" PointX="17.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR60I" Width="1.5" PointX="27.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR60M" Width="1.5" PointX="23.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR60R" Width="1.5" PointX="25.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR61" Width="1.5" PointX="27.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAFR61R" Width="1.5" PointX="6.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAGAMENTOVENDAECF" Width="1.5" PointX="22.5" PointY="176.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPAGAR" Width="1.5" PointX="18.75" PointY="223" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPDV" Width="1.5" PointX="19.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPEDIDOCOMPRA" Width="1.5" PointX="19.5" PointY="235.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPEDIDOVENDA" Width="1.5" PointX="17.25" PointY="175.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPERCURSOMDFE" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPERFILPAF" Width="1.5" PointX="29.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPLANOCONTA" Width="1.5" PointX="16.5" PointY="217.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPREVENDA" Width="1.5" PointX="11.25" PointY="180.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TPRODUCAOFINALIZADA" Width="1.5" PointX="41.75" PointY="195.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TREBOQUEMDFE" Width="1.5" PointX="2.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TRECEBER" Width="1.5" PointX="19.25" PointY="200.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TREDUCAOZ" Width="1.5" PointX="10.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TSEQUENCIA" Width="1.5" PointX="15" PointY="156.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TSERIAL" Width="1.5" PointX="29.25" PointY="178.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TSITUACAOOS" Width="1.5" PointX="29.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TSUBGRUPOESTOQUE" Width="1.5" PointX="24" PointY="236.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTABELAPRECO" Width="1.5" PointX="24" PointY="239.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMP" Width="1.5" PointX="29.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMP2" Width="1.5" PointX="11.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMP3" Width="1.5" PointX="29.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPCAIXA" Width="1.5" PointX="29.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPCOMPRA" Width="1.5" PointX="29.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPM" Width="1.5" PointX="31.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPNFE" Width="1.5" PointX="31.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPPDV" Width="1.5" PointX="8.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPPDV2" Width="1.5" PointX="31.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPPDVALIQUOTAECF" Width="1.5" PointX="13.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTEMPPP" Width="1.5" PointX="31.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TTRANSPORTADORA" Width="1.5" PointX="3" PointY="251.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TUNIDADEMEDIDA" Width="1.5" PointX="24" PointY="243.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TUSUARIO" Width="1.5" PointX="31.5" PointY="168.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TVALIDADEESTOQUE" Width="1.5" PointX="5.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TVEICULO" Width="1.5" PointX="5.25" PointY="252.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TVENDAECF" Width="1.5" PointX="20.25" PointY="171" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TVENDANFCE" Width="1.5" PointX="11.25" PointY="202.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TVENDANFE" Width="1.5" PointX="8.25" PointY="207.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TVENDANFEREFERENCIADA" Width="1.5" PointX="31.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TSEQUENCIANFE" Width="1.5" PointX="31.75" PointY="25.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_TITEMCOMANDAADICIONAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMAJUSTE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TAJUSTEESTOQUE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TALUGUEL_CODCIDADE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TALUGUEL_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TALUGUEL_CODFORMAPAGAMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TALUGUEL_CODFUNCIONARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TALUGUEL_CODVENDEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTOALUGUEL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMALUGUEL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCAIXA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCAIXA_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCAIXA_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCAIXA_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCAIXA_5" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCAIXA_6" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCAIXA_7" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTOALUGUEL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCARREGAMENTOMDFE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TRECEBER_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TUSUARIO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDANFCE_CODCENTROCUSTO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCHEQUECLIENTE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCHEQUEFORNECEDOR_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCLIENTE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONDICIONAL_CODCIDADE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONTABANCARIA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONVENIO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TEMITENTE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPEDIDOVENDA_CODCIDADE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TTRANSPORTADORA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDAECF_CODCIDADE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCLIENTE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCLIENTE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCLIENTE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCLIENTE_5" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCLIENTE_6" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCOMANDA_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONDICIONAL_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TNOTACONSUMIDOR_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TORCAMENTO_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TOS_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPEDIDOVENDA_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPREVENDA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TRECEBER_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TRECEBER_5" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDAECF_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDANFCE_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDANFE_CODCLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCODIGOFABRICA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCOMANDA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMANDA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCOMPRA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCOMPRA_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRAGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRASERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPCOMPOSICAO_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_7" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONDICIONAL_CODFUNCIONARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONDICIONAL_CODSEQUENCIA" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONDICIONAL_CODVENDEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALSERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TMOVBANCO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONTAGEMESTOQUE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONTROLEMODULO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCONVENIO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCOTACAOFORNECEDOR_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOTACAO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_5" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTEDOCUMENTOANTERIOR_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTENFEORIGINARIA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTENFORIGINARIA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTEOUTROSDOCORIGINARIA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTEVEICULO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTEVEICULOSTRANSPORTADO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMDOCUMENTOANTERIORCTE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMDOCUMENTOANTERIORCTE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTEVEICULO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TCTRC_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TNOTACTRC_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_8" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TDETALHEREDUCAOZ_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TEMITENTE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_6" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORNECEDOR_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TENTREGANFE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTOALUGUEL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTOCTE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTONFCE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAMENTOVENDAECF_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TRECEBER_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_7" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_8" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TESTOQUE_9" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMALUGUEL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMANDA_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRAGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRASERIAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALSERIAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFSERIAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCEGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCESERIAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPCOMPOSICAO_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOSERIAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORDEMPRODUCAO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOS_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDAGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDASERIAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPREVENDAGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMTABELAPRECO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMVENDAECF_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMVENDANFCE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFEGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFESERIAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPRODUCAOFINALIZADA_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTOALUGUEL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTOALUGUEL_5" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFORMAPAGAMENTOCTE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPCOMPOSICAO_5" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPEDIDOCOMPRA_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TFUNCIONARIO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMANDA_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPCOMPOSICAO_6" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORDEMPRODUCAO_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOS_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TNOTACONSUMIDOR_CODFUNC" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TORCAMENTO_CODFUNCIONARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TORCAMENTO_CODVENDEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TOS_CODFUNCIONARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TOS_CODVENDEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_6" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPEDIDOVENDA_CODFUNCIONARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPEDIDOVENDA_CODVENDEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPREVENDA_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TRECEBER_6" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TUSUARIO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDAECF_CODVENDEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDANFCE_CODFUNCIONARIO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDANFE_CODVENDEDOR" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRAGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCEGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDAGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPREVENDAGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFEGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMTABELAPRECO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TSUBGRUPOESTOQUE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TOS_CODLISTASERVICO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMANDAADICIONAL_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRAGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCOMPRASERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALSERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMCONDICIONALSERIAL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFSERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFSERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMECFSERIAL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCEGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCEGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCESERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCESERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFCESERIAL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFEVALIDADEESTOQUE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFEVEICULO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNFEVEICULO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMNOTACONSUMIDORGRADE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPCOMPOSICAO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPCOMPOSICAO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOPGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOSERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOSERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORCAMENTOSERIAL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMORDEMPRODUCAO_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPRODUCAOFINALIZADA_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMOS_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOCOMPRA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDAGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDASERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDAGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDASERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPEDIDOVENDASERIAL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPREVENDAGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPREVENDASERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPREVENDAGRADE_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPREVENDASERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMPREVENDASERIAL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMTABELAPRECO_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMVENDAECF_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMVENDAECF_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITEMVENDANFCE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFEGRADE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFEGRADE_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFESERIAL_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFESERIAL_3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNFESERIAL_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENNOTACONSUMIDOR_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENSORCAMENTO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENSVENDANFE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TITENSVENDANFE_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TLACREMDFE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPERCURSOMDFE_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDAECF_CODCANCVENDA" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TOS_CODOBJETO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDANFE_CODOPERACAO" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TORCAMENTO_CODSEQUENCIA" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPRODUCAOFINALIZADA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAMENTOVENDAECF_2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPAGAR_9" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPEDIDOCOMPRA_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TPEDIDOVENDA_CODSEQUENCIA" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TRECEBER_4" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVEICULO_1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TVENDANFE_CODTRANSPORTADORA" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

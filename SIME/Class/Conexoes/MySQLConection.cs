@@ -37,5 +37,10 @@ namespace SIME.Class.Conexoes
             }
             return (MySQLConection)instance;
         }
+
+        public override IDbConnection GetSGBRConnect()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

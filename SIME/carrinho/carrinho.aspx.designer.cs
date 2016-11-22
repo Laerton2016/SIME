@@ -22,6 +22,33 @@ namespace SIME.carrinho {
         protected global::System.Web.UI.ScriptManager ajaxkit;
         
         /// <summary>
+        /// txtTermoCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTermoCliente;
+        
+        /// <summary>
+        /// BtBusca control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtBusca;
+        
+        /// <summary>
+        /// CobCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList CobCliente;
+        
+        /// <summary>
         /// txtTermo control.
         /// </summary>
         /// <remarks>

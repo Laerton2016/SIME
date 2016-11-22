@@ -60,8 +60,8 @@
       <HintPath>..\packages\CassandraCSharpDriver.3.0.8\lib\net40\Cassandra.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.1.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
-      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.5.1.0\lib\net40-client\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.5.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.5.5.0\lib\net40-client\FirebirdSql.Data.FirebirdClient.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Fleece, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -327,10 +327,12 @@
     <Compile Include="Class\ContatosFornecedor.cs" />
     <Compile Include="Class\CUteis\Json.cs" />
     <Compile Include="Class\DAO\CassandraItem.cs" />
+    <Compile Include="Class\DAO\DadoVendaSmall.cs" />
     <Compile Include="Class\DAO\DAOCliente.cs" />
     <Compile Include="Class\DAO\DAOItemVenda.cs" />
     <Compile Include="Class\DAO\DAOOS.cs" />
     <Compile Include="Class\DAO\DAOProduto.cs" />
+    <Compile Include="Class\DAO\DAOUsuario.cs" />
     <Compile Include="Class\DAO\DAOVenda.cs" />
     <Compile Include="Class\DAO\FactoryDAO.cs" />
     <Compile Include="Class\DAO\IDAO.cs" />
@@ -373,7 +375,7 @@
     <Compile Include="Class\NFe\nota_entrada.cs" />
     <Compile Include="Class\NFe\ProdutosNFe.cs" />
     <Compile Include="Class\primitivo\NetVenda.cs" />
-    <Compile Include="Class\ClassProduto\FacedeProduto.cs" />
+    <Compile Include="Class\ProdutoClass\FacedeProduto.cs" />
     <Compile Include="Class\Regra.cs" />
     <Compile Include="Class\Seguradora.cs" />
     <Compile Include="Class\ContaApagar.cs" />
@@ -632,6 +634,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Class\ClassProduto\" />
     <Folder Include="Master\" />
     <Folder Include="Relatorio\" />
     <Folder Include="Uploads\" />

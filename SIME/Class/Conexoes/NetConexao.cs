@@ -20,20 +20,17 @@ namespace SIME.Class
         private OleDbConnection _simeconnect;
         private OleDbConnection _contas;
         private FbConnection _smallConect;
+        private FbConnection _SGBR;
         
         protected static NetConexao instance;
-        private String sime;
-        private String contas;
-        
 
         private NetConexao()
         {
-            sime  = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + _simeLocal + "BD4.mdb;Persist Security Info=False;Jet OLEDB:Database Password=''";
-            contas = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source= Server.MapPath(" + _simeLocal + "contas.mdb);Persist Security Info=False;Jet OLEDB:Database Password=495798";
+            
             _smallConect = new FbConnection();
             _contas = new OleDbConnection();
             _simeconnect = new OleDbConnection();
-            
+            _SGBR = new FbConnection();
         }
 
         /// <summary>
@@ -79,5 +76,15 @@ namespace SIME.Class
             return _contas;
         }
 
+        /// <summary>
+        /// Método efetua a conexão com o banco de dados SGBR 
+        /// </summary>
+        /// <returns>IDbConnection</returns>
+        public override IDbConnection GetSGBRConnect()
+        {
+            if (_SGBR.State == ConnectionState.Closed) _SGBR.ConnectionString = _sgbrRede;
+            return _SGBR;
+            throw new NotImplementedException();
+        }
     }
 }

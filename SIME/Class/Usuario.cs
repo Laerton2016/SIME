@@ -30,6 +30,11 @@ namespace SIME.Class
             return tipo;
         }
 
+        public string GetSenha()
+        {
+            return senha;
+        }
+
         public Int16 getCod() {
             return cod;
         }
@@ -38,9 +43,11 @@ namespace SIME.Class
             return nome;
         }
 
-        public String ToString() {
-            return Convert.ToString(cod) + "," + nome + "," +  senha + "," + Convert.ToString(tipo);
+        override public String ToString() {
+            return Convert.ToString(cod) + "," + nome + ","  + Convert.ToString(tipo);
         }
+
+
 
     }
 }

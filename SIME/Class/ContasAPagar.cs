@@ -13,7 +13,7 @@ namespace SIME.Class
         Connection Conex = new Connection();
         String SQL = "SELECT Duplicatas.* FROM Duplicatas;";
         List<ContaApagar> contas = new List<ContaApagar>();
-        private Conexao conexao;
+        //private Conexao conexao;
 
         /// <summary>
         /// Contrutor de uso geral com todos os dados de contas a pagar
