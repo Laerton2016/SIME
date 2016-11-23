@@ -17,7 +17,7 @@ namespace SIME.Class.Conexoes
         /// <summary>
         /// Instruções do banco de dados sime local
         /// </summary>
-        protected static readonly string _simeLocal = @"d:\dados\";
+        protected static readonly string _simeLocal = @"e:\dados\";
         /// <summary>
         /// Instruções do banco de dados small local
         /// </summary>

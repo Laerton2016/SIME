@@ -11,7 +11,7 @@ namespace SIME
     {
         private Connection DB4, Contas, Small;
         private System.Data.OleDb.OleDbConnection DB4net, Contasnet, Smallnet;
-        private String endereco = @"d:\dados\", endSamll = @"Dsn=small_local;Driver={Firebird/InterBase(r) driver};dbname=C:/Base/SMALL.GDB;charset=NONE;uid=SYSDBA";
+        private String endereco = @"e:\dados\", endSamll = @"Dsn=small_local;Driver={Firebird/InterBase(r) driver};dbname=C:/Base/SMALL.GDB;charset=NONE;uid=SYSDBA";
         //private String endereco = @"\\100.0.0.254\c\novo\", endSamll = @"Dsn=Small;Driver={Firebird/InterBase(r) driver};dbname=100.0.0.250:C:/base/SMALL.GDB;charset=NONE;uid=SYSDBA";
         //private String endereco = @"~\dados\", endSamll = @"Dsn=Small;Driver={Firebird/InterBase(r) driver};dbname=100.0.0.250:C:/base/SMALL.GDB;charset=NONE;uid=SYSDBA";
         /// <summary>

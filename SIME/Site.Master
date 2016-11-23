@@ -3,7 +3,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
-    <title></title>
+    
+    <title>SIME - Sistema Mestre de estoque interligado ao SGBR</title>
+    <!--Informativos do materialize-->
+     
+    
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
@@ -15,9 +19,14 @@
             background:"Imagens/background1.jpg";
         }
     </style>
+      
+    
 </head>
 <body >
     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
+
     <form runat="server">
     <div class="page">
         <div class="header" 

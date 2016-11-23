@@ -9,6 +9,9 @@ using SIME.Class.ProdutoClass;
 
 namespace SIME.Class
 {
+    /// <summary>
+    /// Classe que cuida dos dados de um carrinho de vendas
+    /// </summary>
     public class Carrinho
     {
         private Usuario _user;
@@ -16,6 +19,10 @@ namespace SIME.Class
         private DAOProduto _daoProduto;
         private DAOVenda _daoVenda;
         private Uteis u = new Uteis();
+        /// <summary>
+        /// Carrinho de compra de um determinado usuário.
+        /// </summary>
+        /// <param name="user">Usuário no qual o carrinho pertence</param>
         public Carrinho (Usuario user)
         {
             _user = user;

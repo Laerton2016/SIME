@@ -60,7 +60,7 @@
                 <td class="style8" colspan="4">
                     <asp:ScriptManager ID="scriptMaster" runat="server">
                     </asp:ScriptManager>
-                    Usuário:&nbsp;<asp:DropDownList ID="cobUsuario" runat="server" Height="20px" 
+                    Usuário:&nbsp;<asp:DropDownList ID="cobUsuario" CssClass="browser-default" runat="server" Height="20px" 
                         Width="209px">
                     </asp:DropDownList>
                     &nbsp;&nbsp; Inicio:

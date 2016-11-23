@@ -8,7 +8,7 @@ using ADODB;
 using Sime;
 using SIME.Class;
 using System.Web.Caching;
-
+using SIME.Class.DAO;
 
 namespace SIME
 {
@@ -109,7 +109,10 @@ namespace SIME
                 else
                 {
                     String[] dadosRetorno = cookie.Value.ToString().Split(',');
-                    Usuario retorna = new Usuario(Convert.ToInt16(dadosRetorno[0]), dadosRetorno[1], dadosRetorno[2], Convert.ToInt16(dadosRetorno[3]));
+
+                    //-Usuario retorna = new Usuario(Convert.ToInt16(dadosRetorno[0]), dadosRetorno[1], dadosRetorno[2], Convert.ToInt16(dadosRetorno[3]));
+                    Usuario retorna = FactoryDAO.CriaDAOUsuario().Buscar(Convert.ToInt16(dadosRetorno[0]));
+                    
                     return retorna;
                 }
             }

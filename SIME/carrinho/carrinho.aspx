@@ -2,17 +2,34 @@
 <%@ MasterType VirtualPath="~/Site.Master" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="Ajax" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-</asp:Content>
+    <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="Materialize/css/materialize.min.css"  media="screen,projection"/>
+    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+
     <asp:ScriptManager ID="ajaxkit" runat="server">
+
     </asp:ScriptManager> 
     <div id="Cabecalho">
+
         <div id="Menu">
-            <asp:Label Text= "Defina qual cliente pertence esta pré-venda:" CssClass="textEntry" runat ="server"></asp:Label><br />
-            <asp:TextBox ID="txtTermoCliente" CssClass ="caixaTexto" Width ="90%" runat="server" Visible ="true"></asp:TextBox>
-            <asp:Button Id="BtBusca" CssClass="botao" runat="server" Text="Busca" Visible="true"/>
-            <asp:DropDownList ID="CobCliente" CssClass="caixaTexto" Width ="90%" runat="server" Visible ="false"></asp:DropDownList><br />
+            <div class="row">
+                <div class="col s6">
+                    <asp:Label Text= "Defina qual cliente pertence esta pré-venda:" CssClass="textEntry" runat ="server"></asp:Label><br />
+                </div>
+                <div class ="col s6">
+                    <asp:TextBox ID="txtTermoCliente" CssClass ="caixaTexto" Width ="90%" runat="server" Visible ="true"></asp:TextBox>
+                <
+                <div class="col s6">
+                    <asp:Button Id="BtBusca" CssClass="botao" runat="server" Text="Busca" Visible="true"/>
+                </div>                
+            </div>
+            
+            <asp:DropDownList ID="CobCliente" CssClass ="browser-default"  Width ="90%" runat="server" Visible ="false"></asp:DropDownList><br />
             <asp:Label Text="Digite informações sobre o produto que deseja buscar:" CssClass="textEntry" runat ="server"></asp:Label><br />
             <asp:TextBox ID="txtTermo" runat="server" CssClass="caixaTexto" Width="40%"></asp:TextBox>
             <asp:RadioButton ID="rdid" Text ="Por código" runat="server" /> 
@@ -25,7 +42,7 @@
                         <div id="result" runat ="server" visible="false">
                             <div style="width:50%">
                                 <asp:Label ID="labitens" Text="Itens localizados:" runat="server"></asp:Label>
-                                <asp:DropDownList ID="CobResult" runat="server" Width="90%" CssClass="caixaTexto" ></asp:DropDownList>
+                                <asp:DropDownList ID="CobResult" runat="server" Width="90%" CssClass="browser-default" ></asp:DropDownList>
                             </div>
                             <div style="width:50%">
                                 <asp:Label ID="Label1" Text="Quantidade" runat="server"></asp:Label>
@@ -44,7 +61,7 @@
                     <ContentTemplate>
                         <div>
                             <div>
-                                <asp:ListBox ID="ListaItens" runat ="server" CssClass ="caixaTexto" Width ="80%"/>
+                                <asp:ListBox ID="ListaItens" runat ="server" CssClass ="browser-default" Width ="80%"/>
                             </div>
                             <div>
                                 <asp:Label ID="labTotal" Text="Total:" runat="server"></asp:Label><br />

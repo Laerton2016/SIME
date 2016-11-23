@@ -16,8 +16,8 @@ namespace SIME {
         /// Panel3 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel3;
         
@@ -25,8 +25,8 @@ namespace SIME {
         /// scriptMaster control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager scriptMaster;
         
@@ -34,8 +34,8 @@ namespace SIME {
         /// cobUsuario control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList cobUsuario;
         
@@ -43,8 +43,8 @@ namespace SIME {
         /// txtInicio control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtInicio;
         
@@ -52,8 +52,8 @@ namespace SIME {
         /// txtInicio_CalendarExtender control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.CalendarExtender txtInicio_CalendarExtender;
         
@@ -61,8 +61,8 @@ namespace SIME {
         /// txtFim control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFim;
         
@@ -70,8 +70,8 @@ namespace SIME {
         /// txtFim_CalendarExtender control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.CalendarExtender txtFim_CalendarExtender;
         
@@ -79,8 +79,8 @@ namespace SIME {
         /// BtPesquisar control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtPesquisar;
         
@@ -88,8 +88,8 @@ namespace SIME {
         /// labAtingido control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label labAtingido;
         
@@ -97,8 +97,8 @@ namespace SIME {
         /// Chart1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
         
@@ -106,8 +106,8 @@ namespace SIME {
         /// labResumo control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label labResumo;
         
@@ -115,8 +115,8 @@ namespace SIME {
         /// Panel3_CollapsiblePanelExtender control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated Data.
-        /// To modify move Data declaration from designer file to code-behind file.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.CollapsiblePanelExtender Panel3_CollapsiblePanelExtender;
         

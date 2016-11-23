@@ -30,7 +30,7 @@ namespace SIME.Class.primitivo
         internal String _nf;
         [DataMember]
         internal String _descricao;
-
+        
         public long Id_produto
         {
             get

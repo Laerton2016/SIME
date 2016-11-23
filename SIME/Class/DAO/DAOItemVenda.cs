@@ -58,6 +58,8 @@ namespace SIME.Class.DAO
             item.Nf = dr["nf"].ToString();
             item.Quantidade = Int64.Parse(dr["quantidade"].ToString());
             item.Valor = float.Parse(dr["desconto"].ToString());
+            DAOProduto dao = FactoryDAO.CriaDAOProduto();
+            item.Descricao = dao.Buscar(item.Id_produto).Descricao;
             return item;
         }
         /// <summary>
